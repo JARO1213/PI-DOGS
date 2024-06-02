@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Router, response } from "express";
 import { Dogs } from "../modules/Dogs.js";
+import { Temperaments } from "../modules/Temperaments.js";
 
 async function rout(url) {
   try {
@@ -8,7 +9,7 @@ async function rout(url) {
       `https://api.thedogapi.com/v1/images/search?limit=4&api_key=${process.env.API_KEY}`
     );
     let data = await response.json();
-    
+
     return data;
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -42,30 +43,35 @@ export async function filterAndFetch() {
     dogsFetcher(data); /// second recursion and it id do it for data
     return result;
   }
-   async function dogPromise (){
-    try{
-    let bDone = await rout();      // i am calling the external api.
-     let dogPromises = bDone.map ((item) => {
-     let extracted = extractProp(item, ["name", "weight", "height", "life_span"]);
-     console.log (extracted.life_span)
-        return Dogs.create ({
+  async function dogPromise() {
+    try {
+      let bDone = await rout(); // i am calling the external api.
+      let dogPromises = bDone.map((item) => {
+        let extracted = extractProp(item, [
+          "name",
+          "weight",
+          "height",
+          "life_span",
+          "temperament",
+        ]);
+        console.log(extracted.temperament);
+        return [Dogs.create({
           name: extracted.name,
-          weight: extracted.weight,  
+          weight: extracted.weight,
           height: extracted.height,
-          image: item.url,  
-          life_span: extracted.life_span
-        });
-    
+          image: item.url,
+          life_span: extracted.life_span,
+        }), Temperaments.create({
+          name: extracted.temperament,
+        })];
+       
       });
-      
-    
-  await Promise.all (dogPromises);
-  console.log('Every data has been mathched')
-    }catch (error){
-      console.error("Error fetching and storing dog data:",error);
+
+      await Promise.all(dogPromises);
+      console.log("Every data has been mathched");
+    } catch (error) {
+      console.error("Error fetching and storing dog data:", error);
     }
+  }
+  dogPromise();
 }
-dogPromise()
-}
-
-

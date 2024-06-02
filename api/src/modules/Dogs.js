@@ -21,3 +21,4 @@ sequelieze.beforeSync(() => {
    Dogs.belongsToMany(Temperaments, {through: 'DogsTemparaments'})
    Temperaments.belongsToMany(Dogs, {through: 'DogsTemparaments'})
 
+sequelieze.sync
