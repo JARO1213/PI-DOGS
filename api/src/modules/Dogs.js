@@ -13,12 +13,14 @@ export const Dogs = sequelieze.define( "dogs", {
 })
 
 sequelieze.beforeSync(() => {
-    sequelieze.query('CREATE SEQUENCE IF NOT EXISTS custom_sequence CACHE 50');
+   sequelieze.query('CREATE SEQUENCE IF NOT EXISTS custom_sequence CACHE 50');
+  
    });
    await sequelieze.sync();   // This is to create a sequence that can be used automaticly
     
 
-   Dogs.belongsToMany(Temperaments, {through: 'DogsTemparaments'})
-   Temperaments.belongsToMany(Dogs, {through: 'DogsTemparaments'})
+   Dogs.belongsToMany(Temperaments, {through: 'DogsTemperaments'})
+   Temperaments.belongsToMany(Dogs, {through: 'DogsTemperaments'})
 
 sequelieze.sync
+export default Dogs
