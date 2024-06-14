@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getDogsRace, getOneDog, getId } from "../handlers/DogsHandlers.js";
+import { getDogsRace, getOneDog, getId, createDog, getAllDogs } from "../handlers/DogsHandlers.js";
 import  {getTemp} from "../handlers/TemperamentsHandler.js";
 // import { getDogsTem } from "../controllers/dogControllers.js";
 
@@ -12,6 +12,8 @@ router.get('/dogs/', getDogsRace)
 router.get('/dogs/:id', getId)
 router.get('/temperaments/', getTemp)
 router.get('/dogsName/:name/', getOneDog)
+router.post('/dogs/', createDog)
+router.get('/allDogs/', getAllDogs )
 
 
 

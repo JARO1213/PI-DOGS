@@ -6,7 +6,7 @@ import { Temperaments } from "../modules/Temperaments.js";
 export async function rout(url) {
   try {
     let { data } = await axios(
-      `https://api.thedogapi.com/v1/images/search?limit=18&api_key=${process.env.API_KEY}`
+      `https://api.thedogapi.com/v1/images/search?limit=10&api_key=${process.env.API_KEY}`
     );
     return data;
   } catch (error) {
@@ -98,7 +98,7 @@ export async function filterAndFetch() {
           await dogs.addTemperaments(temperaments);
         }
 
-        console.log('Esto es dbApi:', dbApi)
+        // console.log('Esto es dbApi:', dbApi)
         return { dogs, dbApi }
       })
       const result = (await Promise.all(dogPromises));
@@ -112,3 +112,4 @@ export async function filterAndFetch() {
   }
   return await dogPromise();
 }
+
