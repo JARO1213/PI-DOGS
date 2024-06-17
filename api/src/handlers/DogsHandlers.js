@@ -127,7 +127,10 @@ export const getAllDogs = async (req, res) => {
     });
     if (!getDRaze)
       return res.status(404).json({ message: "It cannot be found!" });
-    const allDogs = [...new Set([...dogApi, ...getDRaze])];
+    let allDogs = [...new Set([...dogApi, ...getDRaze])];
+    if (allDogs.length > 19) {
+      allDogs = allDogs.slice(0, 19);
+    }
     return res.status(200).json(allDogs);
   } catch (error) {
     return res.status(500).json({ message: error.message });

@@ -1,3 +1,625 @@
 2024-06-14 00:58:47.778 -05 [9148] LOG:  el sistema de bases de datos fue apagado en 2024-06-14 00:58:04 -05
 2024-06-14 04:39:59.223 -05 [9004] LOG:  empezando checkpoint: time
 2024-06-14 04:39:59.241 -05 [9004] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.004 s, total=0.025 s; sync files=3, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/2A72660, redo lsn=0/2A72628
+2024-06-14 08:25:51.269 -05 [6496] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 08:25:51.269 -05 [4028] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 08:25:51.269 -05 [1628] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 08:25:51.271 -05 [14896] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 08:25:51.271 -05 [5212] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 08:29:59.560 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 08:30:01.664 -05 [9004] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.070 s, sync=0.016 s, total=2.106 s; sync files=9, longest=0.009 s, average=0.002 s; distance=106 kB, estimate=106 kB; lsn=0/2A8CFC8, redo lsn=0/2A8CF90
+2024-06-14 08:38:27.668 -05 [1116] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 08:38:27.668 -05 [11216] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 08:44:59.680 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 08:45:01.899 -05 [9004] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.191 s, sync=0.014 s, total=2.220 s; sync files=10, longest=0.007 s, average=0.002 s; distance=91 kB, estimate=104 kB; lsn=0/2AA3D20, redo lsn=0/2AA3CE8
+2024-06-14 09:17:35.648 -05 [6036] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:17:35.648 -05 [19316] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:17:35.648 -05 [8676] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:17:35.648 -05 [6852] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:17:35.649 -05 [13812] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:17:36.396 -05 [15628] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:17:36.396 -05 [12392] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:20:00.216 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 09:20:02.725 -05 [9004] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.468 s, sync=0.019 s, total=2.509 s; sync files=8, longest=0.012 s, average=0.003 s; distance=142 kB, estimate=142 kB; lsn=0/2AC7898, redo lsn=0/2AC7860
+2024-06-14 09:25:00.788 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 09:25:02.531 -05 [9004] LOG:  checkpoint complete: wrote 19 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.694 s, sync=0.033 s, total=1.744 s; sync files=10, longest=0.012 s, average=0.004 s; distance=101 kB, estimate=138 kB; lsn=0/2AE0D40, redo lsn=0/2AE0D08
+2024-06-14 09:47:21.194 -05 [664] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:47:21.196 -05 [8652] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 09:50:00.769 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 09:50:05.370 -05 [9004] LOG:  checkpoint complete: wrote 39 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.440 s, sync=0.040 s, total=4.602 s; sync files=10, longest=0.031 s, average=0.004 s; distance=155 kB, estimate=155 kB; lsn=0/2B07C58, redo lsn=0/2B07C20
+2024-06-14 09:55:00.402 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 09:55:01.994 -05 [9004] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.560 s, sync=0.021 s, total=1.593 s; sync files=10, longest=0.010 s, average=0.003 s; distance=51 kB, estimate=145 kB; lsn=0/2B148E8, redo lsn=0/2B148B0
+2024-06-14 10:00:01.020 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:00:01.946 -05 [9004] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.881 s, sync=0.024 s, total=0.927 s; sync files=9, longest=0.009 s, average=0.003 s; distance=40 kB, estimate=134 kB; lsn=0/2B1E9C8, redo lsn=0/2B1E990
+2024-06-14 10:05:01.970 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:05:08.328 -05 [9004] LOG:  checkpoint complete: wrote 60 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.114 s, sync=0.191 s, total=6.358 s; sync files=23, longest=0.017 s, average=0.009 s; distance=164 kB, estimate=164 kB; lsn=0/2B47D28, redo lsn=0/2B47CF0
+2024-06-14 10:07:31.065 -05 [14344] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:07:31.065 -05 [13472] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:07:38.076 -05 [10568] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:07:38.076 -05 [15028] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:07:45.771 -05 [5904] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:07:45.771 -05 [11112] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:07:53.267 -05 [16704] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:07:53.267 -05 [13812] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:10:01.392 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:10:12.041 -05 [9004] LOG:  checkpoint complete: wrote 100 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=10.552 s, sync=0.074 s, total=10.649 s; sync files=61, longest=0.010 s, average=0.002 s; distance=563 kB, estimate=563 kB; lsn=0/2BD5BD8, redo lsn=0/2BD4B10
+2024-06-14 10:12:47.092 -05 [10304] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:12:47.092 -05 [15416] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:12:47.093 -05 [14540] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:12:47.093 -05 [10012] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:12:47.093 -05 [2724] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:15:01.055 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:15:03.764 -05 [9004] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.676 s, sync=0.023 s, total=2.709 s; sync files=19, longest=0.007 s, average=0.002 s; distance=120 kB, estimate=519 kB; lsn=0/2BF2D40, redo lsn=0/2BF2D08
+2024-06-14 10:20:01.794 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:20:04.417 -05 [9004] LOG:  checkpoint complete: wrote 26 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.580 s, sync=0.021 s, total=2.624 s; sync files=18, longest=0.004 s, average=0.002 s; distance=119 kB, estimate=479 kB; lsn=0/2C10A90, redo lsn=0/2C10A58
+2024-06-14 10:25:01.438 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:25:04.290 -05 [9004] LOG:  checkpoint complete: wrote 28 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.792 s, sync=0.037 s, total=2.853 s; sync files=20, longest=0.009 s, average=0.002 s; distance=100 kB, estimate=441 kB; lsn=0/2C29CC8, redo lsn=0/2C29C90
+2024-06-14 10:26:18.059 -05 [15764] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:26:18.059 -05 [8264] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:30:01.306 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:30:04.396 -05 [9004] LOG:  checkpoint complete: wrote 30 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.034 s, sync=0.035 s, total=3.091 s; sync files=18, longest=0.008 s, average=0.002 s; distance=145 kB, estimate=411 kB; lsn=0/2C4FE10, redo lsn=0/2C4E3B0
+2024-06-14 10:30:22.172 -05 [4108] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:30:22.172 -05 [17412] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:30:22.173 -05 [16360] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:30:22.174 -05 [11640] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:30:22.174 -05 [18140] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:30:24.661 -05 [4268] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:30:24.661 -05 [11228] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:31:28.664 -05 [15336] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:31:28.665 -05 [11820] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:31:30.678 -05 [744] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:31:30.678 -05 [17272] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:31:32.322 -05 [17032] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:31:32.323 -05 [16548] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:32:16.138 -05 [16312] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:32:16.138 -05 [13812] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:32:16.139 -05 [2916] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:32:16.139 -05 [18668] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:32:16.140 -05 [12912] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:35:01.415 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:35:05.344 -05 [9004] LOG:  checkpoint complete: wrote 40 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.882 s, sync=0.032 s, total=3.929 s; sync files=22, longest=0.009 s, average=0.002 s; distance=216 kB, estimate=392 kB; lsn=0/2C846E8, redo lsn=0/2C846B0
+2024-06-14 10:35:20.175 -05 [12528] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:35:20.175 -05 [4364] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:35:20.175 -05 [9788] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:35:20.176 -05 [18668] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:35:20.177 -05 [6496] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:39:47.222 -05 [15636] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:39:47.222 -05 [5104] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 10:40:01.354 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:40:04.151 -05 [9004] LOG:  checkpoint complete: wrote 30 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.747 s, sync=0.020 s, total=2.798 s; sync files=20, longest=0.007 s, average=0.001 s; distance=116 kB, estimate=364 kB; lsn=0/2CA1750, redo lsn=0/2CA1718
+2024-06-14 10:45:01.160 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:45:03.169 -05 [9004] LOG:  checkpoint complete: wrote 20 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.951 s, sync=0.031 s, total=2.010 s; sync files=15, longest=0.010 s, average=0.003 s; distance=66 kB, estimate=334 kB; lsn=0/2CB2280, redo lsn=0/2CB2248
+2024-06-14 10:55:01.201 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 10:55:01.998 -05 [9004] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.751 s, sync=0.021 s, total=0.798 s; sync files=7, longest=0.009 s, average=0.003 s; distance=20 kB, estimate=303 kB; lsn=0/2CB7538, redo lsn=0/2CB7500
+2024-06-14 11:00:02.012 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 11:00:05.498 -05 [9004] LOG:  checkpoint complete: wrote 34 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.432 s, sync=0.034 s, total=3.487 s; sync files=19, longest=0.009 s, average=0.002 s; distance=146 kB, estimate=287 kB; lsn=0/2CDBFC0, redo lsn=0/2CDBF88
+2024-06-14 11:07:33.271 -05 [9320] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 11:07:33.272 -05 [16080] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 11:07:38.030 -05 [14668] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 11:07:38.030 -05 [13000] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 11:10:02.514 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 11:10:05.053 -05 [9004] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.491 s, sync=0.037 s, total=2.540 s; sync files=20, longest=0.006 s, average=0.002 s; distance=98 kB, estimate=268 kB; lsn=0/2CF4938, redo lsn=0/2CF48C8
+2024-06-14 11:15:02.068 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 11:15:03.590 -05 [9004] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.479 s, sync=0.021 s, total=1.523 s; sync files=10, longest=0.009 s, average=0.003 s; distance=62 kB, estimate=248 kB; lsn=0/2D042A8, redo lsn=0/2D04270
+2024-06-14 11:17:43.425 -05 [17112] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 11:17:43.425 -05 [7604] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-14 11:20:02.613 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 11:20:03.947 -05 [9004] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.290 s, sync=0.022 s, total=1.335 s; sync files=9, longest=0.009 s, average=0.003 s; distance=28 kB, estimate=226 kB; lsn=0/2D0B340, redo lsn=0/2D0B308
+2024-06-14 11:39:33.289 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 11:39:34.204 -05 [9004] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.886 s, sync=0.011 s, total=0.916 s; sync files=7, longest=0.007 s, average=0.002 s; distance=28 kB, estimate=206 kB; lsn=0/2D124D0, redo lsn=0/2D12498
+2024-06-14 11:44:33.206 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 11:44:34.120 -05 [9004] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.878 s, sync=0.015 s, total=0.914 s; sync files=9, longest=0.004 s, average=0.002 s; distance=28 kB, estimate=188 kB; lsn=0/2D196B0, redo lsn=0/2D19678
+2024-06-14 11:59:33.151 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-14 11:59:34.941 -05 [9004] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.756 s, sync=0.014 s, total=1.790 s; sync files=9, longest=0.006 s, average=0.002 s; distance=78 kB, estimate=177 kB; lsn=0/2D2D0C8, redo lsn=0/2D2D090
+2024-06-15 05:16:41.187 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 05:16:43.316 -05 [9004] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.002 s, sync=0.106 s, total=2.129 s; sync files=10, longest=0.022 s, average=0.011 s; distance=60 kB, estimate=165 kB; lsn=0/2D3C4A8, redo lsn=0/2D3C470
+2024-06-15 05:17:02.635 -05 [16492] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 05:17:02.636 -05 [21560] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 05:21:41.303 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 05:21:42.632 -05 [9004] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.312 s, sync=0.010 s, total=1.330 s; sync files=9, longest=0.003 s, average=0.002 s; distance=57 kB, estimate=155 kB; lsn=0/2D4AB08, redo lsn=0/2D4AAD0
+2024-06-15 05:26:41.624 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 05:26:48.769 -05 [9004] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.016 s, sync=1.948 s, total=7.146 s; sync files=7, longest=1.194 s, average=0.279 s; distance=27 kB, estimate=142 kB; lsn=0/2D51980, redo lsn=0/2D51948
+2024-06-15 05:40:06.675 -05 [15644] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 05:40:06.676 -05 [2916] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 05:52:55.138 -05 [14616] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 05:52:55.138 -05 [160] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:07:47.797 -05 [23400] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:07:47.804 -05 [13892] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:07:47.806 -05 [11548] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:07:47.814 -05 [22204] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:07:47.826 -05 [19688] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:23:43.629 -05 [2376] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:23:43.630 -05 [18140] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 06:36:41.322 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 06:36:44.733 -05 [9004] LOG:  checkpoint complete: wrote 34 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.366 s, sync=0.027 s, total=3.412 s; sync files=19, longest=0.007 s, average=0.002 s; distance=125 kB, estimate=140 kB; lsn=0/2D70FE0, redo lsn=0/2D70FA8
+2024-06-15 06:46:41.717 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 06:46:44.125 -05 [9004] LOG:  checkpoint complete: wrote 26 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.366 s, sync=0.024 s, total=2.409 s; sync files=19, longest=0.011 s, average=0.002 s; distance=70 kB, estimate=133 kB; lsn=0/2D82B00, redo lsn=0/2D82AC8
+2024-06-15 07:21:52.202 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 07:21:56.465 -05 [9004] LOG:  checkpoint complete: wrote 43 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.224 s, sync=0.027 s, total=4.264 s; sync files=25, longest=0.007 s, average=0.002 s; distance=167 kB, estimate=167 kB; lsn=0/2DAC7D0, redo lsn=0/2DAC798
+2024-06-15 17:17:04.918 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 17:17:07.165 -05 [9004] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.195 s, sync=0.031 s, total=2.248 s; sync files=15, longest=0.005 s, average=0.002 s; distance=80 kB, estimate=158 kB; lsn=0/2DC0A90, redo lsn=0/2DC0A58
+2024-06-15 17:22:04.169 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 17:22:05.461 -05 [9004] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.254 s, sync=0.025 s, total=1.293 s; sync files=10, longest=0.009 s, average=0.003 s; distance=45 kB, estimate=147 kB; lsn=0/2DCBE90, redo lsn=0/2DCBE58
+2024-06-15 17:27:04.471 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 17:27:08.554 -05 [9004] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.605 s, sync=1.530 s, total=4.084 s; sync files=12, longest=0.564 s, average=0.128 s; distance=63 kB, estimate=138 kB; lsn=0/2DDBDE8, redo lsn=0/2DDBDB0
+2024-06-15 17:32:04.548 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 17:32:05.881 -05 [9004] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.308 s, sync=0.013 s, total=1.333 s; sync files=9, longest=0.003 s, average=0.002 s; distance=35 kB, estimate=128 kB; lsn=0/2DE4D90, redo lsn=0/2DE4D58
+2024-06-15 17:42:04.844 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 17:42:07.396 -05 [9004] LOG:  checkpoint complete: wrote 25 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.523 s, sync=0.019 s, total=2.553 s; sync files=15, longest=0.007 s, average=0.002 s; distance=85 kB, estimate=124 kB; lsn=0/2DFA478, redo lsn=0/2DFA440
+2024-06-15 17:47:04.362 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 17:47:06.047 -05 [9004] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.642 s, sync=0.020 s, total=1.686 s; sync files=7, longest=0.009 s, average=0.003 s; distance=60 kB, estimate=117 kB; lsn=0/2E09750, redo lsn=0/2E09718
+2024-06-15 17:57:04.009 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 17:57:05.878 -05 [9004] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.836 s, sync=0.014 s, total=1.870 s; sync files=9, longest=0.007 s, average=0.002 s; distance=24 kB, estimate=108 kB; lsn=0/2E0F758, redo lsn=0/2E0F720
+2024-06-15 18:02:04.858 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:02:08.621 -05 [9004] LOG:  checkpoint complete: wrote 38 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.718 s, sync=0.026 s, total=3.764 s; sync files=21, longest=0.008 s, average=0.002 s; distance=100 kB, estimate=107 kB; lsn=0/2E287E8, redo lsn=0/2E287B0
+2024-06-15 18:07:04.591 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:07:07.353 -05 [9004] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.715 s, sync=0.028 s, total=2.763 s; sync files=18, longest=0.009 s, average=0.002 s; distance=112 kB, estimate=112 kB; lsn=0/2E44B20, redo lsn=0/2E44AE8
+2024-06-15 18:12:04.345 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:12:07.836 -05 [9004] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.410 s, sync=1.988 s, total=3.492 s; sync files=7, longest=1.425 s, average=0.284 s; distance=54 kB, estimate=106 kB; lsn=0/2E524F8, redo lsn=0/2E524C0
+2024-06-15 18:17:04.832 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:17:06.147 -05 [9004] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.285 s, sync=0.014 s, total=1.316 s; sync files=10, longest=0.006 s, average=0.002 s; distance=52 kB, estimate=101 kB; lsn=0/2E5F630, redo lsn=0/2E5F5F8
+2024-06-15 18:22:04.135 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:22:16.836 -05 [9004] LOG:  checkpoint complete: wrote 34 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.526 s, sync=8.299 s, total=12.701 s; sync files=14, longest=1.073 s, average=0.593 s; distance=144 kB, estimate=144 kB; lsn=0/2E83720, redo lsn=0/2E836E8
+2024-06-15 18:27:04.819 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:27:05.622 -05 [9004] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.773 s, sync=0.011 s, total=0.804 s; sync files=7, longest=0.007 s, average=0.002 s; distance=24 kB, estimate=132 kB; lsn=0/2E89870, redo lsn=0/2E89838
+2024-06-15 18:37:04.610 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:37:05.909 -05 [9004] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.264 s, sync=0.014 s, total=1.299 s; sync files=9, longest=0.007 s, average=0.002 s; distance=56 kB, estimate=124 kB; lsn=0/2EA0140, redo lsn=0/2E97C20
+2024-06-15 18:42:04.914 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:42:06.054 -05 [9004] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.099 s, sync=0.020 s, total=1.140 s; sync files=7, longest=0.010 s, average=0.003 s; distance=47 kB, estimate=116 kB; lsn=0/2EA38C8, redo lsn=0/2EA3890
+2024-06-15 18:52:04.037 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:52:07.551 -05 [9004] LOG:  checkpoint complete: wrote 36 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.469 s, sync=0.025 s, total=3.514 s; sync files=22, longest=0.007 s, average=0.002 s; distance=144 kB, estimate=144 kB; lsn=0/2EC7C20, redo lsn=0/2EC7BE8
+2024-06-15 18:57:04.537 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 18:57:09.595 -05 [9004] LOG:  checkpoint complete: wrote 50 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.998 s, sync=0.044 s, total=5.059 s; sync files=24, longest=0.013 s, average=0.002 s; distance=196 kB, estimate=196 kB; lsn=0/2EF8DA8, redo lsn=0/2EF8D70
+2024-06-15 18:58:23.757 -05 [10176] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 18:58:23.757 -05 [23404] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 18:58:23.757 -05 [4980] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 18:58:23.757 -05 [23884] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 18:58:23.757 -05 [23876] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:02:04.600 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:02:07.596 -05 [9004] LOG:  checkpoint complete: wrote 29 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.940 s, sync=0.036 s, total=2.996 s; sync files=18, longest=0.009 s, average=0.002 s; distance=137 kB, estimate=190 kB; lsn=0/2F1B4A8, redo lsn=0/2F1B470
+2024-06-15 19:07:04.591 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:07:05.614 -05 [9004] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.980 s, sync=0.020 s, total=1.023 s; sync files=7, longest=0.009 s, average=0.003 s; distance=47 kB, estimate=176 kB; lsn=0/2F27218, redo lsn=0/2F271E0
+2024-06-15 19:12:04.602 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:12:06.556 -05 [9004] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.916 s, sync=0.027 s, total=1.954 s; sync files=12, longest=0.010 s, average=0.003 s; distance=95 kB, estimate=168 kB; lsn=0/2F471F8, redo lsn=0/2F3F138
+2024-06-15 19:17:04.560 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:17:07.473 -05 [9004] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.863 s, sync=0.026 s, total=2.913 s; sync files=11, longest=0.010 s, average=0.003 s; distance=114 kB, estimate=162 kB; lsn=0/2F5B9C8, redo lsn=0/2F5B990
+2024-06-15 19:22:04.473 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:22:06.311 -05 [9004] LOG:  checkpoint complete: wrote 19 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.809 s, sync=0.017 s, total=1.838 s; sync files=15, longest=0.007 s, average=0.002 s; distance=64 kB, estimate=152 kB; lsn=0/2F72C90, redo lsn=0/2F6BBD0
+2024-06-15 19:25:47.617 -05 [12056] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:25:47.618 -05 [21336] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:27:04.321 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:27:08.786 -05 [9004] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.417 s, sync=0.028 s, total=4.465 s; sync files=21, longest=0.007 s, average=0.002 s; distance=228 kB, estimate=228 kB; lsn=0/2FA4E28, redo lsn=0/2FA4DF0
+2024-06-15 19:28:17.760 -05 [13384] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:17.760 -05 [22644] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:19.792 -05 [22096] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:19.792 -05 [2196] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:23.968 -05 [14368] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:23.969 -05 [9176] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:30.586 -05 [19512] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:30.587 -05 [18316] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:31.611 -05 [19264] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:31.611 -05 [5048] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:32.358 -05 [20428] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:28:32.363 -05 [14832] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:30:58.304 -05 [24072] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:30:58.304 -05 [6444] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:00.541 -05 [18240] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:00.541 -05 [19116] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:11.245 -05 [22216] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:11.245 -05 [17652] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:12.667 -05 [23288] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:12.667 -05 [24136] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:16.035 -05 [6928] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:16.035 -05 [20048] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:16.036 -05 [23240] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:16.036 -05 [16052] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:31:16.037 -05 [23008] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:32:04.809 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:32:20.940 -05 [9004] LOG:  checkpoint complete: wrote 153 buffers (0.9%); 0 WAL file(s) added, 0 removed, 1 recycled; write=16.009 s, sync=0.059 s, total=16.132 s; sync files=110, longest=0.007 s, average=0.001 s; distance=1194 kB, estimate=1194 kB; lsn=0/30DFD18, redo lsn=0/30CF680
+2024-06-15 19:33:20.894 -05 [19112] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:20.894 -05 [21520] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:30.716 -05 [24356] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:30.716 -05 [11948] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:30.717 -05 [18712] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:30.718 -05 [13892] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:30.723 -05 [23956] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:32.849 -05 [19048] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:32.849 -05 [23248] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:37.315 -05 [21592] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:37.315 -05 [4724] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:38.441 -05 [21392] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:33:38.442 -05 [18632] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:34:12.754 -05 [6628] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:34:12.754 -05 [23616] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:34:13.860 -05 [19992] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:34:13.860 -05 [21284] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 19:37:04.941 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 19:37:20.046 -05 [9004] LOG:  checkpoint complete: wrote 139 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=15.015 s, sync=0.067 s, total=15.106 s; sync files=89, longest=0.006 s, average=0.001 s; distance=875 kB, estimate=1162 kB; lsn=0/31AA410, redo lsn=0/31AA3D8
+2024-06-15 23:28:07.287 -05 [952] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 23:28:07.287 -05 [7256] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 23:28:11.001 -05 [12464] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 23:28:11.001 -05 [6408] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 23:28:11.002 -05 [11340] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 23:28:15.432 -05 [20060] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 23:28:15.433 -05 [11816] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-15 23:32:04.323 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 23:32:17.750 -05 [9004] LOG:  checkpoint complete: wrote 125 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=13.258 s, sync=0.144 s, total=13.427 s; sync files=79, longest=0.021 s, average=0.002 s; distance=644 kB, estimate=1110 kB; lsn=0/324B6A8, redo lsn=0/324B670
+2024-06-15 23:37:04.747 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-15 23:37:06.856 -05 [9004] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.063 s, sync=0.035 s, total=2.109 s; sync files=16, longest=0.009 s, average=0.003 s; distance=70 kB, estimate=1006 kB; lsn=0/325CF88, redo lsn=0/325CF50
+2024-06-16 04:10:50.839 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:10:52.961 -05 [9004] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.068 s, sync=0.032 s, total=2.123 s; sync files=16, longest=0.009 s, average=0.002 s; distance=68 kB, estimate=912 kB; lsn=0/326E028, redo lsn=0/326DFD8
+2024-06-16 04:11:14.072 -05 [17984] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:11:14.072 -05 [19868] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:11:14.072 -05 [24156] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:11:14.072 -05 [24300] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:11:14.072 -05 [15004] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:11:37.318 -05 [19656] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:11:37.318 -05 [4408] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:13:57.334 -05 [18952] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:13:57.334 -05 [1492] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:13:57.335 -05 [5268] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:13:57.335 -05 [5344] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:13:57.336 -05 [8072] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:15:36.716 -05 [1796] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:15:36.716 -05 [20412] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:15:41.140 -05 [5584] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:15:41.140 -05 [6896] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 04:15:50.971 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:16:00.898 -05 [9004] LOG:  checkpoint complete: wrote 94 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=9.854 s, sync=0.050 s, total=9.927 s; sync files=55, longest=0.003 s, average=0.001 s; distance=476 kB, estimate=868 kB; lsn=0/32E5010, redo lsn=0/32E4FD8
+2024-06-16 04:20:50.904 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:20:52.880 -05 [9004] LOG:  checkpoint complete: wrote 20 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.922 s, sync=0.031 s, total=1.976 s; sync files=16, longest=0.009 s, average=0.002 s; distance=71 kB, estimate=789 kB; lsn=0/32F6DB8, redo lsn=0/32F6D80
+2024-06-16 04:25:50.880 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:25:52.674 -05 [9004] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.744 s, sync=0.029 s, total=1.794 s; sync files=15, longest=0.009 s, average=0.002 s; distance=59 kB, estimate=716 kB; lsn=0/3305D40, redo lsn=0/3305D08
+2024-06-16 04:30:50.682 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:30:51.048 -05 [9004] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.327 s, sync=0.016 s, total=0.366 s; sync files=4, longest=0.009 s, average=0.004 s; distance=6 kB, estimate=645 kB; lsn=0/3307600, redo lsn=0/33075C8
+2024-06-16 04:40:50.058 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:40:51.669 -05 [9004] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.583 s, sync=0.016 s, total=1.612 s; sync files=15, longest=0.003 s, average=0.002 s; distance=65 kB, estimate=587 kB; lsn=0/3319520, redo lsn=0/3317AB0
+2024-06-16 04:45:50.669 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:45:52.952 -05 [9004] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.247 s, sync=0.025 s, total=2.283 s; sync files=18, longest=0.005 s, average=0.002 s; distance=101 kB, estimate=538 kB; lsn=0/3331038, redo lsn=0/3331000
+2024-06-16 04:55:50.970 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 04:55:51.327 -05 [9004] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.324 s, sync=0.012 s, total=0.357 s; sync files=4, longest=0.008 s, average=0.003 s; distance=8 kB, estimate=485 kB; lsn=0/3333318, redo lsn=0/33332E0
+2024-06-16 05:00:50.331 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:00:51.025 -05 [9004] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.654 s, sync=0.020 s, total=0.694 s; sync files=7, longest=0.009 s, average=0.003 s; distance=25 kB, estimate=439 kB; lsn=0/33399F0, redo lsn=0/33399B8
+2024-06-16 05:05:50.039 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:05:52.680 -05 [9004] LOG:  checkpoint complete: wrote 26 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.579 s, sync=0.043 s, total=2.641 s; sync files=22, longest=0.010 s, average=0.002 s; distance=99 kB, estimate=405 kB; lsn=0/33529D0, redo lsn=0/3352998
+2024-06-16 05:09:25.713 -05 [15008] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:09:25.713 -05 [12180] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:09:32.400 -05 [3912] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:09:32.400 -05 [7772] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:10:50.683 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:10:59.864 -05 [9004] LOG:  checkpoint complete: wrote 86 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=9.106 s, sync=0.055 s, total=9.182 s; sync files=50, longest=0.009 s, average=0.002 s; distance=464 kB, estimate=464 kB; lsn=0/33C8C00, redo lsn=0/33C6CF8
+2024-06-16 05:15:39.313 -05 [6636] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:15:39.314 -05 [20684] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:15:50.862 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:15:52.644 -05 [9004] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.730 s, sync=0.030 s, total=1.782 s; sync files=15, longest=0.009 s, average=0.002 s; distance=63 kB, estimate=424 kB; lsn=0/33D6960, redo lsn=0/33D6928
+2024-06-16 05:20:50.645 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:20:52.438 -05 [9004] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.748 s, sync=0.025 s, total=1.794 s; sync files=15, longest=0.009 s, average=0.002 s; distance=66 kB, estimate=388 kB; lsn=0/33E74A0, redo lsn=0/33E7468
+2024-06-16 05:40:50.452 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:40:53.198 -05 [9004] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.187 s, sync=0.488 s, total=2.746 s; sync files=19, longest=0.088 s, average=0.026 s; distance=112 kB, estimate=361 kB; lsn=0/3404608, redo lsn=0/3403660
+2024-06-16 05:45:50.192 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:45:50.540 -05 [9004] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.320 s, sync=0.014 s, total=0.349 s; sync files=4, longest=0.009 s, average=0.004 s; distance=4 kB, estimate=325 kB; lsn=0/3404878, redo lsn=0/3404840
+2024-06-16 05:47:49.020 -05 [23248] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:47:49.021 -05 [18244] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:47:49.021 -05 [4372] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:47:49.021 -05 [24504] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:47:49.022 -05 [24464] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 05:50:50.549 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 05:50:52.504 -05 [9004] LOG:  checkpoint complete: wrote 20 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.924 s, sync=0.019 s, total=1.955 s; sync files=17, longest=0.003 s, average=0.002 s; distance=76 kB, estimate=300 kB; lsn=0/34179D0, redo lsn=0/3417998
+2024-06-16 06:00:50.518 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 06:00:51.188 -05 [9004] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.641 s, sync=0.012 s, total=0.671 s; sync files=7, longest=0.007 s, average=0.002 s; distance=17 kB, estimate=272 kB; lsn=0/341BDE0, redo lsn=0/341BDA8
+2024-06-16 06:25:50.216 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 06:25:50.582 -05 [9004] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.329 s, sync=0.015 s, total=0.366 s; sync files=4, longest=0.009 s, average=0.004 s; distance=6 kB, estimate=245 kB; lsn=0/341D898, redo lsn=0/341D860
+2024-06-16 06:38:17.587 -05 [19732] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:17.587 -05 [6316] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:24.476 -05 [14928] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:24.476 -05 [18872] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:26.011 -05 [9264] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:26.012 -05 [10644] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:30.459 -05 [14668] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:30.459 -05 [1796] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:36.812 -05 [14828] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:38:36.813 -05 [17416] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 06:40:50.622 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 06:41:03.336 -05 [9004] LOG:  checkpoint complete: wrote 120 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=12.632 s, sync=0.070 s, total=12.715 s; sync files=74, longest=0.009 s, average=0.001 s; distance=705 kB, estimate=705 kB; lsn=0/34CDF30, redo lsn=0/34CDEF8
+2024-06-16 06:45:50.350 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 06:45:51.155 -05 [9004] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.756 s, sync=0.034 s, total=0.806 s; sync files=7, longest=0.019 s, average=0.005 s; distance=20 kB, estimate=637 kB; lsn=0/34D3098, redo lsn=0/34D3060
+2024-06-16 06:55:50.165 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 06:55:50.519 -05 [9004] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.328 s, sync=0.007 s, total=0.355 s; sync files=1, longest=0.007 s, average=0.007 s; distance=13 kB, estimate=574 kB; lsn=0/34D6578, redo lsn=0/34D6540
+2024-06-16 07:00:50.513 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 07:00:51.442 -05 [9004] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.891 s, sync=0.020 s, total=0.929 s; sync files=8, longest=0.009 s, average=0.003 s; distance=13 kB, estimate=518 kB; lsn=0/34D99C0, redo lsn=0/34D9988
+2024-06-16 07:02:38.160 -05 [21936] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:02:38.161 -05 [3792] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:05:50.442 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 07:05:53.890 -05 [9004] LOG:  checkpoint complete: wrote 33 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.397 s, sync=0.031 s, total=3.448 s; sync files=20, longest=0.004 s, average=0.002 s; distance=177 kB, estimate=484 kB; lsn=0/3506170, redo lsn=0/3506138
+2024-06-16 07:20:50.899 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 07:20:53.303 -05 [9004] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.368 s, sync=0.019 s, total=2.405 s; sync files=17, longest=0.007 s, average=0.002 s; distance=102 kB, estimate=446 kB; lsn=0/351FD38, redo lsn=0/351FD00
+2024-06-16 07:25:50.309 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 07:25:52.998 -05 [9004] LOG:  checkpoint complete: wrote 26 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.673 s, sync=0.009 s, total=2.690 s; sync files=7, longest=0.003 s, average=0.002 s; distance=144 kB, estimate=416 kB; lsn=0/3543E88, redo lsn=0/3543E50
+2024-06-16 07:30:50.992 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 07:30:54.345 -05 [9004] LOG:  checkpoint complete: wrote 32 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.286 s, sync=0.047 s, total=3.354 s; sync files=23, longest=0.009 s, average=0.003 s; distance=119 kB, estimate=386 kB; lsn=0/3561E28, redo lsn=0/3561DF0
+2024-06-16 07:40:50.348 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 07:40:51.126 -05 [9004] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.752 s, sync=0.017 s, total=0.778 s; sync files=7, longest=0.008 s, average=0.003 s; distance=11 kB, estimate=348 kB; lsn=0/3564B10, redo lsn=0/3564AD8
+2024-06-16 07:41:05.216 -05 [19000] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:41:05.216 -05 [17160] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:45:50.135 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 07:45:52.195 -05 [9004] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.029 s, sync=0.020 s, total=2.060 s; sync files=16, longest=0.007 s, average=0.002 s; distance=74 kB, estimate=321 kB; lsn=0/35773A8, redo lsn=0/3577370
+2024-06-16 07:57:34.702 -05 [608] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:57:34.702 -05 [16332] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:57:34.702 -05 [22012] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:57:34.703 -05 [17172] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 07:57:34.703 -05 [2100] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:00:50.206 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 08:00:52.954 -05 [9004] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.638 s, sync=0.097 s, total=2.749 s; sync files=19, longest=0.029 s, average=0.006 s; distance=110 kB, estimate=300 kB; lsn=0/3592C00, redo lsn=0/3592BC8
+2024-06-16 08:03:07.270 -05 [2620] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:07.270 -05 [21832] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:07.271 -05 [20948] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:07.272 -05 [14776] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:07.274 -05 [17556] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:21.012 -05 [11196] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:21.012 -05 [24272] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:21.012 -05 [5884] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:21.013 -05 [17200] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:21.017 -05 [23060] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:34.894 -05 [17436] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:34.895 -05 [19268] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:34.895 -05 [21700] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:34.895 -05 [10324] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:34.896 -05 [1940] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:43.838 -05 [13616] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:03:43.838 -05 [11596] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 08:05:50.946 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 08:05:53.408 -05 [9004] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.413 s, sync=0.029 s, total=2.462 s; sync files=16, longest=0.008 s, average=0.002 s; distance=118 kB, estimate=282 kB; lsn=0/35B0640, redo lsn=0/35B0608
+2024-06-16 08:20:50.422 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 08:20:51.129 -05 [9004] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.665 s, sync=0.020 s, total=0.708 s; sync files=7, longest=0.009 s, average=0.003 s; distance=22 kB, estimate=256 kB; lsn=0/35B6220, redo lsn=0/35B61E8
+2024-06-16 09:50:50.252 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 09:50:51.365 -05 [9004] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.069 s, sync=0.025 s, total=1.113 s; sync files=9, longest=0.011 s, average=0.003 s; distance=47 kB, estimate=235 kB; lsn=0/35C21B8, redo lsn=0/35C2180
+2024-06-16 10:10:50.393 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 10:10:51.410 -05 [9004] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.974 s, sync=0.020 s, total=1.018 s; sync files=8, longest=0.009 s, average=0.003 s; distance=40 kB, estimate=215 kB; lsn=0/35CC500, redo lsn=0/35CC4C8
+2024-06-16 10:15:50.412 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 10:16:01.002 -05 [9004] LOG:  checkpoint complete: wrote 101 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=10.550 s, sync=0.019 s, total=10.590 s; sync files=26, longest=0.003 s, average=0.001 s; distance=713 kB, estimate=713 kB; lsn=0/3689FF8, redo lsn=0/367E988
+2024-06-16 10:20:51.018 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 10:20:59.499 -05 [9004] LOG:  checkpoint complete: wrote 79 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=8.437 s, sync=0.031 s, total=8.482 s; sync files=24, longest=0.009 s, average=0.002 s; distance=456 kB, estimate=687 kB; lsn=0/36F0D30, redo lsn=0/36F0CF8
+2024-06-16 10:35:51.526 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 10:35:56.862 -05 [9004] LOG:  checkpoint complete: wrote 51 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.273 s, sync=0.040 s, total=5.336 s; sync files=20, longest=0.009 s, average=0.002 s; distance=270 kB, estimate=645 kB; lsn=0/37348B8, redo lsn=0/3734880
+2024-06-16 10:40:51.858 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 10:40:52.224 -05 [9004] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.329 s, sync=0.016 s, total=0.367 s; sync files=4, longest=0.009 s, average=0.004 s; distance=12 kB, estimate=582 kB; lsn=0/3737B70, redo lsn=0/3737B38
+2024-06-16 10:43:49.760 -05 [10764] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 10:43:49.760 -05 [21680] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 10:43:49.760 -05 [8020] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 10:43:49.761 -05 [14156] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 10:43:49.763 -05 [10104] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 10:45:51.223 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 10:45:54.045 -05 [9004] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.786 s, sync=0.016 s, total=2.822 s; sync files=13, longest=0.007 s, average=0.002 s; distance=123 kB, estimate=536 kB; lsn=0/3756A78, redo lsn=0/3756A40
+2024-06-16 11:01:47.238 -05 [19680] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:01:47.239 -05 [11440] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:01:47.239 -05 [18448] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:01:47.239 -05 [1840] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:01:47.240 -05 [5580] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:05:51.080 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 11:05:53.323 -05 [9004] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.217 s, sync=0.014 s, total=2.243 s; sync files=9, longest=0.007 s, average=0.002 s; distance=75 kB, estimate=490 kB; lsn=0/3769788, redo lsn=0/3769750
+2024-06-16 11:10:12.992 -05 [9460] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:10:12.993 -05 [4100] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:10:12.993 -05 [18408] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:10:12.994 -05 [2152] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:10:12.994 -05 [11824] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:10:51.327 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 11:10:52.392 -05 [9004] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.041 s, sync=0.012 s, total=1.065 s; sync files=7, longest=0.007 s, average=0.002 s; distance=55 kB, estimate=447 kB; lsn=0/3777510, redo lsn=0/37774D8
+2024-06-16 11:12:08.639 -05 [13700] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:12:08.639 -05 [1028] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-16 11:15:51.394 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 11:15:54.099 -05 [9004] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.672 s, sync=0.017 s, total=2.706 s; sync files=15, longest=0.007 s, average=0.002 s; distance=135 kB, estimate=415 kB; lsn=0/37992A8, redo lsn=0/3799238
+2024-06-16 11:20:51.101 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 11:20:51.777 -05 [9004] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.643 s, sync=0.020 s, total=0.677 s; sync files=7, longest=0.009 s, average=0.003 s; distance=30 kB, estimate=377 kB; lsn=0/37A0CD8, redo lsn=0/37A0CA0
+2024-06-16 11:25:51.780 -05 [9004] LOG:  empezando checkpoint: time
+2024-06-16 11:25:54.210 -05 [9004] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.385 s, sync=0.024 s, total=2.430 s; sync files=15, longest=0.009 s, average=0.002 s; distance=130 kB, estimate=352 kB; lsn=0/37C17A8, redo lsn=0/37C1770
