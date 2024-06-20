@@ -171,3 +171,31 @@
     border-style: groove;
     border-radius: 19%;
   }
+  .pagination {
+    display: flex;
+    list-style: none;
+   
+    position: absolute;
+    left: 42%;
+    right: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .page-item {
+    margin: 0 5px;
+    padding: 0 9px;
+  }
+  
+  .page-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .page-link:hover {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }

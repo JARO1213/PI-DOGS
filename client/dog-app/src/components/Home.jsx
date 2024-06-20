@@ -3,11 +3,11 @@ import { deleteDog, } from '../features/counter/dogsSlice.js';
 import { Link } from 'react-router-dom';
 import { gettingDogs } from '../features/counter/actions.js';
 import { useEffect } from 'react';
-
+import DogList from '../elements/paginacion.jsx';
 import '../CSS-Components/csmodule.css'
 
 
-function DogList() {
+function HomePage() {
 
 
     const dispatch = useDispatch()
@@ -18,6 +18,9 @@ function DogList() {
             dispatch(gettingDogs());
         }
     }, [dispatch, dogFormState.length]);
+
+
+    
 
     const handleDelete = (id) => {
         dispatch(deleteDog(id))
@@ -38,7 +41,7 @@ function DogList() {
                     Create Dog form
                 </Link>
             </header>
-
+            <DogList>
             
             {dogFormState.map(dog => (
                 <div key={dog.id} className='listItem'>  <Link to={`/detailedDog/${dog.id}`}>
@@ -58,11 +61,11 @@ function DogList() {
                 </div>   
 
             ))}
-
+            </DogList>
         </div>
     )
 }
 
 
 
-export default DogList
+export default HomePage

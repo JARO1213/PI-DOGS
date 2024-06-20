@@ -120,18 +120,53 @@ export const getAllDogs = async (req, res) => {
   try {
     const dogApi = await filterAndFetch()
     const getDRaze = await Dogs.findAll({
-      // include: {
-      //   model: Temperaments,
-      //   }
-
+      include: {
+        model: Temperaments,
+        }
     });
     if (!getDRaze)
       return res.status(404).json({ message: "It cannot be found!" });
     let allDogs = [...new Set([...dogApi, ...getDRaze])];
     if (allDogs.length > 19) {
-      allDogs = allDogs.slice(0, 19);
+      allDogs = allDogs.slice(0, 50);
     }
     return res.status(200).json(allDogs);
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};
+
+export const getDogsBd = async (req, res) => {
+  try {
+   
+    const getDog = await Dogs.findAll({
+      include: {
+        model: Temperaments,
+        }
+    });
+    if (!getDog)
+      return res.status(404).json({ message: "It cannot be found!" });
+    let allDogs = [...new Set([ ...getDog])];
+    if (allDogs.length > 19) {
+      allDogs = allDogs.slice(0, 50);
+    }
+    return res.status(200).json(allDogs);
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};
+
+export const getDogsApi = async (req, res) => {
+  try {
+    const dogApi = await filterAndFetch() 
+    
+    if (!dogApi)
+      return res.status(404).json({ message: "It cannot be found!" });
+    let apiDogs = [...new Set([...dogApi])];
+    if (apiDogs.length > 19) {
+      apiDogs = apiDogs.slice(0, 50);
+    }
+    return res.status(200).json(apiDogs);
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }

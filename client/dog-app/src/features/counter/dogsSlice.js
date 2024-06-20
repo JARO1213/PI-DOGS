@@ -9,10 +9,11 @@ export const dogSlice = createSlice({
     name: 'dogsIni',
     initialState: Dogs,
     reducers: {
-        getDogs: (state, action) => {
-
-           
+        getDogs: (state, action) => {          
             return action.payload.filter(dog => dog.name);
+        },
+        getDogsApi: (state, action) => {
+          return action.payload.filter(dog => dog.name)
         },
 
         addDog: (state, action) => {
@@ -44,5 +45,5 @@ export const dogSlice = createSlice({
 
 })
 
-export const { addDog, deleteDog, editDog, getDogs } = dogSlice.actions
+export const { addDog, deleteDog, editDog, getDogs, getDogsApi } = dogSlice.actions
 export default dogSlice.reducer
