@@ -1,6 +1,6 @@
 
 import { Dogs } from "../modules/Dogs.js";
-import { filterAndFetch } from "../controllers/dogControllers.js";
+import { filterAndFetch, justApi } from "../controllers/dogControllers.js";
 import Temperaments from "../modules/Temperaments.js";
 
 
@@ -158,9 +158,9 @@ export const getDogsBd = async (req, res) => {
 
 export const getDogsApi = async (req, res) => {
   try {
-    const dogApi = await filterAndFetch() 
-    
-    if (!dogApi)
+    const data = await justApi() 
+    const dogApi = data.map (dog => dog.dbApi)
+           if (!dogApi)
       return res.status(404).json({ message: "It cannot be found!" });
     let apiDogs = [...new Set([...dogApi])];
     if (apiDogs.length > 19) {

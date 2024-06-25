@@ -1,18 +1,25 @@
 import  React from "react";
 import '../CSS-Components/csmodule.css'
 import SearchBar from "./searchbar";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Nav ({onSearch}) {
 
    return (     
-    <div className= "styles.nav" > 
+    <div className= "navBar" > 
+    <ul>
+    <li><Link to={'/home'} >Home</Link></li>
+    <li><Link to='/formDogs'> Create-Dog  </Link></li>
+    
        {/* <Link to ="/About">About</Link>
        <br></br>         
-       <Link to ="/Home">Home</Link>
+      
        <br></br>         
        <Link to ="/Favorite">Favorite</Link> */}
-       <SearchBar onSearch={onSearch}/>               
+    </ul>
+    <SearchBar onSearch={onSearch}/>
+       
+                   
      </div> 
     )    
     }

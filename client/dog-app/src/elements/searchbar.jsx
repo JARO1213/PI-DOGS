@@ -37,13 +37,10 @@ export default function SearchBar() {
 
    return (
       <div className="Nav" >
-
-
-         <Link to={!isEmpty(name) ? handleSearch() : '#'}>Buscar </Link>
-
          <input onChange={handleChange} className="searchStyle" type='search' name='name' value={name} />
+         <Link to={!isEmpty(name) ? handleSearch() : '#'} className= 'searchButton'>Buscar </Link>
          {error && <p className="error-message">Perro no encontrado</p>}
-         {error && <Link to={'/'} onClick={resetError}>Volver</Link>}
+         {error && <Link to={'/home'} onClick={resetError}>Volver</Link>}
       </div>
    );
 

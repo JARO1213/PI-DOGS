@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { gettingDogs } from "./actions";
 
 
 const Dogs = []
@@ -17,11 +16,9 @@ export const dogSlice = createSlice({
         },
 
         addDog: (state, action) => {
-
             state.push(action.payload)
         },
         deleteDog: (state, action) => {
-
             const dogFound = state.find(dog => dog.id === action.payload)
             if (dogFound) {
                 state.splice(state.indexOf(dogFound), 1)

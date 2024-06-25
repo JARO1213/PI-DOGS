@@ -1,4 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .divCard {
     display: flex;
@@ -24,10 +33,6 @@
 
   .tittleCard{
     font-size: 23px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; */
-    /* text-align: center; */
-    /* margin-top: 3em; */
-    /* margin-bottom: 0em; */
     color: #031c2c;
     text-decoration-line: underline;
     letter-spacing: 0.10em;
@@ -53,16 +58,24 @@
     letter-spacing: 0.08em;
   }
   .unorderedList {
+    float: left;
     display: -webkit-box;
     list-style-type: none; 
-    padding: 1px;
+    padding: 0 120px;
     flex-direction: row;
-    /* margin-bottom: 4em; */
-    /* align-items: center;  */
-    width: 100px; 
-    
-    /* flex-direction; */
+    margin: -0.3em;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;
+    gap: 60x;
+    margin-top: 2 em;
+    margin-right: 0.1em;
+    margin-left: -40px; 
+    width: 100px;
   }
+  .unorderedList li button {
+    margin: 0 auto; /* Asegura que el botón esté centrado entro del li */
+}
   .listItem {
     display: grid;     
     width: 17vw;
@@ -79,7 +92,7 @@
     margin-top: 4em;
     margin-left: 4em;
     /* justify-content: center; */
-    /* margin-bottom: 0.067px; */
+  position: relative;
     font-weight: 800;
     border-radius: 9%;
     border: #350583; 
@@ -108,11 +121,13 @@
     background-color: #87898a;
     color: #060007;
     border-bottom: #2c08ac;
-    /* height: fit-content; */
-    /* justify-content: left; */
+    margin-top: 10px; 
+    height: fit-content;
     border-radius: 14px;
-    /* position: relative;  */
-    left:40%;
+    position: relative; 
+    left:15%;
+    cursor: pointer;
+    padding: 5px 10px;
     
   }
   .buttonAdd{
@@ -131,26 +146,87 @@
 
   .imgStyle:hoover{
     transform:rotate3d(180°)
-  
+   }
+
+.imgStyleD{
+    float: right; /* Alinea la imagen a la derecha */
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: 3px solid #5f9ea0; /* Color verde agua marina */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px; /* Espacio alrededor de la imagen */
+    transition: transform 0.3s ease;
+    margin-left: 300px; 
+    margin-bottom: 18%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)
+}
+
+.imgStyleD:hover {
+    transform:scale3d (1.1, 1.1, 1);
+    border-color: #87cefa; /* Cambiar el color del borde al azul claro en hover */
+}
+  .searchStyle input[type = 'Digita tu perro']{
+    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
   }
-  .searchStyle{
-    border-style: inset;
-    border-color: #2c08ac;
-    margin-left: 7px;
-    position: relative;
-    left: 32%;
+  .searchButton {
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: none;
+    background-color:  #004085;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: small;
   }
+  .searchButton input[type="submit"]:hover {
+    background-color: #0288d1;
+}
   .navBar {
-    display: block;
-    margin-bottom: 15px 0;
-    background: #03A9F4;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    -o-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    display: flex;
+    margin: 23px 0;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1568bb, #87cefa);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     border-radius: 5px;
-  }
+    padding: 10px;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1000;
+    margin: 0;
+}
+
+.navBar ul li {
+    margin: 0;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 40px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navBar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.navBar ul li a:active {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0.95);
+}
     
   .subtittleDetail {
     font-size: 1em;
@@ -174,7 +250,6 @@
   .pagination {
     display: flex;
     list-style: none;
-   
     position: absolute;
     left: 42%;
     right: 50%;
@@ -198,4 +273,151 @@
   .page-link:hover {
     background-color: #e9ecef;
     border-color: #dee2e6;
+  }
+  .nav > li {
+    float:right;
+  }
+  
+  .nav li a {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:flex;
+  }
+  
+  .nav li a:hover {
+    background-color:#434343;
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+  }
+  
+  .nav li:hover > ul {
+    display:block;
+  }
+  
+  .nav li ul li {
+    position:relative;
+  }
+  
+  .nav li ul li ul {
+    right:140px;
+    top:0px;
+  }
+
+  .landing-page {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .header h1 {
+    margin: 0;
+    color: #343a40;
+  }
+  
+  .main-content {
+    padding: 40px;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .main-content p {
+    font-size: 18px;
+    color: #495057;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+
+  .filter-container {
+    display: flex;
+    align-items: center;
+    margin-left: 200px; 
+  }
+  .filter-label {
+    margin-right: 24px;
+  }
+  .filter-container1 {
+    display: inline-block;
+    padding: 10px 20px;  
+    margin-left: -930px; 
+    background-color: #06489e; 
+    color: white;
+    text-align: center;
+    text-decoration: burlywood; 
+    font-weight: bold;
+    border-radius: 5px; 
+    border: 1px solid transparent; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.filter-container1:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    text-decoration: none; 
+}
+.filter-container1:active {
+    background-color: #004085; 
+    border-color: #003366; 
+}
+.filter-container2 {
+  display: flex;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: #1568bb; */
+    background: linear-gradient(135deg, #1568bb, #87cefa);
+    margin: 20px 0;
+}
+  
+    .filter-container2 img {
+      flex-shrink: 0;
+      margin-left: 20px;
+      border: 2px solid #094aa0; /* Light steel blue */
+      box-shadow: 0 4px 8px rgba(0, 128, 128, 0.2); /* Teal shadow */
+      width: 300px; /* Adjust size as needed */
+      height: auto;
+  }
+  
+  .filter-container2 h3,
+   .filter-container2 p {
+      margin: 0 0 10px 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }s
+  
+  .filter-container2:hover img {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
   }

@@ -1,8 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteDog, } from '../features/counter/dogsSlice.js';
 import { Link } from 'react-router-dom';
-import { gettingDogs } from '../features/counter/actions.js';
-import { useEffect } from 'react';
+import { gettingDogs, gettingApiDogs } from '../features/counter/actions.js';
+import { useState, useEffect } from 'react';
 import DogList from '../elements/paginacion.jsx';
 import '../CSS-Components/csmodule.css'
 
@@ -11,57 +10,49 @@ function HomePage() {
 
 
     const dispatch = useDispatch()
+    const [bdSource, setbdSource] = useState(0);
     const dogFormState = useSelector(state => state.dogState)
 
+
     useEffect(() => {
-        if (dogFormState.length === 0) {
+        if (bdSource === 0) {
             dispatch(gettingDogs());
+        } else if (bdSource === 1) {
+            dispatch(gettingApiDogs());
         }
-    }, [dispatch, dogFormState.length]);
+    }, [dispatch, bdSource]);
 
+  
 
-    
-
-    const handleDelete = (id) => {
-        dispatch(deleteDog(id))
-    }
+    const handleSelectChange = (e) => {
+        const value = parseInt(e.target.value, 10);
+        setbdSource(value);
+    };
 
 
 
     if (!dogFormState || dogFormState.length === 0) {
-        return <p>Thare are not dogs available</p>;
+        return <p>Loading dogs...</p>;
     }
 
     return (
         <div >
-
             <header>
-                <h1>Dogs App {dogFormState.length} </h1>
-                <Link to='/formDogs'>
+                <h1>Dogs App </h1>
+                <h3>Tenemos: {dogFormState.length} perros para ti</h3>
+                <div className='filter-container'>
+                    <p className='filter-label'>Filtrar por:</p>
+                    <select onChange={handleSelectChange} value={bdSource}>
+                        <option value={0}>Datos Locales</option>
+                        <option value={1}>API</option>
+                    </select>
+                </div>
+
+                <Link className='filter-container1' to='/formDogs'>
                     Create Dog form
                 </Link>
             </header>
-            <DogList>
-            
-            {dogFormState.map(dog => (
-                <div key={dog.id} className='listItem'>  <Link to={`/detailedDog/${dog.id}`}>
-                <div >
-                   
-                    <img src={dog.image} className='imgStyle' alt={dog.name} />
-                    <h2 className='tittleCard'> Raza: {dog.name}</h2>
-                    {/* <p className='subtittleDetail'>{dog.weight}</p> */}
-                    <p>{dog.weight}</p>
-                    {/* <p>{dog.temperament}</p> */}
-                    {/* <p>{dog.life_span}</p> */}
-                   
-                 
-                </div>
-                </Link>
-                <button onClick={() => handleDelete(dog.id)} className='buttonClose'>Delete</button>
-                </div>   
-
-            ))}
-            </DogList>
+            <DogList bdSource={bdSource}/>
         </div>
     )
 }

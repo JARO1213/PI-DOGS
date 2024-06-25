@@ -51,11 +51,9 @@ function DogForm() {
             }))
 
         }
-        naigate('/')
+        let enlace = `/detailedDog/${encodeURIComponent(params.id)}`
+        naigate(enlace)
     }
-
-
-
     return (
         <form onSubmit={handleSubmit} >
             <div className='divCard'><img src={dogCreate.image} className='imgStyle' alt={dogCreate.image} /></div>

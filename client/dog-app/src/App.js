@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary.js';
 import Nav from './elements/nav.jsx';
 import DogDetailed from './components/dogDetail.jsx';
-
+import LandingPage from './components/landing.js';
 import NotFound from './elements/noFound.jsx';
 
 
@@ -21,7 +21,8 @@ function App() {
           <BrowserRouter>
             {<Nav />}
             <Routes>
-              <Route path='/' element={<HomePage />} />
+            <Route path='/' element={<LandingPage />} />
+              <Route path='/home' element={<HomePage />} />
               <Route path='/formDogs' element={<DogForm />} />
               <Route path='/editDog/:id' element={<DogForm />} />
               <Route path='/detailedDog/:id' element={<DogDetailed />} />
