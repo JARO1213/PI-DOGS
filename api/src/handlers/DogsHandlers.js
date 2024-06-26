@@ -86,17 +86,19 @@ export const getOneDog = async (req, res) => {
 
 export const createDog = async (req, res) => {
   try {
-    const { name, weight, height, life_span, image, temperaments } = req.body;
-
-    if (!name || !weight || !height || !temperaments || temperaments.length === 0) {
+    const { name, image, weightImperial, weightMetric, heightImperial, heightMetric, life_span, temperaments } = req.body;
+    if (!name || !image || !weightImperial || !weightMetric || !heightImperial || !heightMetric || !temperaments || temperaments.length === 0) {
       return res.status(400).json({ message: "Missing required fields" });
     }
+    console.log(req)
     const newDog = await Dogs.create({
       name,
-      weight,
-      height,
-      life_span,
-      image
+      weightImperial,
+      weightMetric,
+      heightImperial,
+      heightMetric,
+      life_span, 
+      image,     
     });
 
     const temperamentPromises = temperaments.map(async temp => {
@@ -122,7 +124,11 @@ export const getAllDogs = async (req, res) => {
     const getDRaze = await Dogs.findAll({
       include: {
         model: Temperaments,
+        attributes: ["id"],
+        through: {
+          attributes: []
         }
+      },
     });
     if (!getDRaze)
       return res.status(404).json({ message: "It cannot be found!" });
@@ -142,7 +148,8 @@ export const getDogsBd = async (req, res) => {
     const getDog = await Dogs.findAll({
       include: {
         model: Temperaments,
-        }
+        attributes: ["name"], // Incluir solo el nombre de los temperamentos
+      },
     });
     if (!getDog)
       return res.status(404).json({ message: "It cannot be found!" });

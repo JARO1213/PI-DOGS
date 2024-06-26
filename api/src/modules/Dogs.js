@@ -6,9 +6,13 @@ export const Dogs = sequelieze.define( "dogs", {
     id:{type:DataTypes.INTEGER, primaryKey: true, defaultValue: literal("nextval('custom_sequence')")},   //ID.\*
     image: {type:DataTypes.STRING}, // Imagen.\*
     name: {type:DataTypes.STRING}, // Nombre.\*
-    height:  {type:DataTypes.JSONB}, // Altura.\*
-    weight: {type:DataTypes.JSONB}, // Peso.\*
+    weightImperial:  {type:DataTypes.STRING},
+    weightMetric: {type:DataTypes.STRING}, 
+    heightImperial: {type:DataTypes.STRING}, 
+    heightMetric: {type:DataTypes.STRING}, 
     life_span: {type:DataTypes.STRING}, // Longevidad.\*    
+    //temperament: {type:DataTypes.STRING}, // Temperamento.\*
+    //temperament: {type:DataTypes.STRING}, // Temperamento.\*
     //temperament: {type:DataTypes.STRING}, // Temperamento.\*
 })
 

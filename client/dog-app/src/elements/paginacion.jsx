@@ -30,9 +30,9 @@ const DogList = ({bdSource}) => {
 
       {currentDogs.map((dog, index) => (
         <ul className='unorderedList'>
-          <Link to={`/detailedDog/${dog.id}`}>
+          <Link  to={`/detailedDog/${dog.id}`}>
             <ul key={index} className='listItem'>
-              <h4>{dog.name} <img src={dog.image} className='imgStyle' alt={dog.name} /> </h4>
+              <h4>{dog.name} <img src={dog.image} className='imgStyle' alt={dog.name} /> </h4>          
             </ul>
           </Link>
           {bdSource === 0 && (

@@ -15,6 +15,7 @@ function HomePage() {
 
 
     useEffect(() => {
+      
         if (bdSource === 0) {
             dispatch(gettingDogs());
         } else if (bdSource === 1) {
@@ -40,7 +41,7 @@ function HomePage() {
             <header>
                 <h1>Dogs App </h1>
                 <h3>Tenemos: {dogFormState.length} perros para ti</h3>
-                <div className='filter-container'>
+                <div className='filter-containerF'>
                     <p className='filter-label'>Filtrar por:</p>
                     <select onChange={handleSelectChange} value={bdSource}>
                         <option value={0}>Datos Locales</option>
@@ -52,7 +53,8 @@ function HomePage() {
                     Create Dog form
                 </Link>
             </header>
-            <DogList bdSource={bdSource}/>
+            <DogList bdSource={bdSource}/>¨
+          
         </div>
     )
 }

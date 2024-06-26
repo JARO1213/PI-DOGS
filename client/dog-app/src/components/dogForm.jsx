@@ -10,9 +10,12 @@ function DogForm() {
 
     const [dogCreate, setName] = useState({
         name: "",
-        image:"",
-        weight: "",
-        height: "",
+        image: "",
+        weightImperial: "",
+        weightMetric: "",
+        heightImperial: "",
+        heightMetric: "",
+        life_span: "",
         temperament: ""
     })
     const dispatch = useDispatch()
@@ -24,7 +27,7 @@ function DogForm() {
         if (params.id) {
             const paramIdAsNumber = Number(params.id);
             const dogToEdit = (dogsState.find((dog) => dog.id === paramIdAsNumber))
-            console.log('aqui:',dogToEdit.name)
+            console.log('aqui:', dogToEdit.name)
             if (dogToEdit) {
                 setName(dogToEdit)
             }
@@ -43,26 +46,48 @@ function DogForm() {
         if (params.id) {
             dispatch(editDog({ ...dogCreate, id: params.id }))
 
-        } else {
-
+        } else  {
             dispatch(addDog({
                 ...dogCreate,
                 id: uuid(),
             }))
+       
 
         }
-        let enlace = `/detailedDog/${encodeURIComponent(params.id)}`
+        let enlace = `/detailedDog/${dogCreate.id}`
         naigate(enlace)
     }
     return (
-        <form onSubmit={handleSubmit} >
-            <div className='divCard'><img src={dogCreate.image} className='imgStyle' alt={dogCreate.image} /></div>
-            <input name='name' type="text" placeholder='name' onChange={handleChange} value={dogCreate.name} />
-            <textarea name='weight' placeholder="weight" onChange={handleChange} value={dogCreate.weight}></textarea> 
-            <textarea name='height' placeholder="height" onChange={handleChange}value = {dogCreate.height}></textarea>
-            <textarea name='temperament' placeholder="temperament" onChange={handleChange} value={dogCreate.temperament}></textarea> 
-            <button>submit</button>
-        </form>
+        <div className='form-container'>
+            <div className='form-header'>
+                <h2> Edita tu perro </h2>
+            </div>
+            <form onSubmit={handleSubmit} >
+                <div ><img src={dogCreate.image} className='dog-image ' alt={dogCreate.image} /></div>
+                <div className='form-group'>
+                    <label>Nombre: </label><textarea name='name' type="text" placeholder='name' onChange={handleChange} value={dogCreate.name} />
+                </div>
+                <div className='form-group'>
+                    <label>Peso Máximo:</label><textarea name='weightMetric' placeholder="weightMetric" onChange={handleChange} value={dogCreate.weightMetric}></textarea>
+                </div>
+                <div className='form-group'>
+                    <label>Peso Mínimo:</label><textarea name='weightImperial' placeholder="weightImperial" onChange={handleChange} value={dogCreate.weightImperial}></textarea>
+                </div>
+                <div className='form-group'>
+                    <label>Altura Máxima:</label><textarea name='heightImperial' placeholder="heightImperial" onChange={handleChange} value={dogCreate.heightImperial}></textarea>
+                </div>
+                <div className='form-group'>
+                    <li>Altura Mínima:</li><textarea name='heightMetric' placeholder="heightMetric" onChange={handleChange} value={dogCreate.heightMetric}></textarea>
+                </div>
+                <div className='form-group'>
+                    <label>Tiempo de vida: </label><textarea name='life_span' placeholder="life_span" onChange={handleChange} value={dogCreate.life_span}></textarea>
+                </div>
+                <div className='form-group'>
+                    <label>Temperamento:</label><textarea name='temperament' placeholder="temperament" onChange={handleChange} value={dogCreate.temperament}></textarea>
+                </div>
+                <button className='form-actions'>Guardar</button>
+            </form>
+        </div>
     )
 }
 

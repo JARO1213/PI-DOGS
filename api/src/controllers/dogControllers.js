@@ -8,9 +8,9 @@ export async function rout() {
     let { data } = await axios(
       `https://api.thedogapi.com/v1/images/search?limit=25&api_key=${process.env.API_KEY}`
     );
-    if (data !==null){
-
-    return data;}
+    if (data !== null) {
+      return data;
+    }
   } catch (error) {
     console.error("Error fetching data:", error);
     return null;
@@ -24,7 +24,7 @@ export async function filterAndFetch() {
 
   function extractProp(data, properties) {
     //this function recursion for catching data
-    let result = {}; // here I am going to catch the data (bDone [name and weight])
+    let result = {}; // here I am going to catch the data (data [name and weight])
     function dogsFetcher(data) {
       // this one is using the parameters down
       for (let key in data) {
@@ -32,8 +32,17 @@ export async function filterAndFetch() {
           // determina si tiene propiedad.  (ej: "Esto: con esto"(true)  carro (false))
           let value = data[key]; // This has the data already.
           if (properties.includes(key)) {
+            if (key === "height") {
+              // Handle multiple 'height' objects
+              if (!result[key]) {
+                result[key] = [];
+              }
+              result[key].push(value);
+            } else {
+              result[key] = value;
+            }
             // now it is checking if name and other are included in properties
-            result[key] = value; // i got the result and it has been put in result{}
+            // result[key] = value; // i got the result and it has been put in result{}
           }
           if (typeof value === "object" && value !== null) {
             // this is important, because that is the way I know if it is an object
@@ -54,7 +63,7 @@ export async function filterAndFetch() {
       if (!bDone) {
         throw new Error("No data fetched from the API");
       }
-      let dogPromises =  bDone.map(async (item) => {
+      let dogPromises = bDone.map(async (item) => {
         let extracted = extractProp(item, [
           "name",
           "weight",
@@ -63,11 +72,12 @@ export async function filterAndFetch() {
           "temperament",
           "id"
         ]);
-        // console.log(extracted);
-        const { imperial: weightImperial, metric: weightMetric } = extracted.weight || {};
-        const { imperial: heightImperial, metric: heightMetric } = extracted.height || {};
 
-      
+     
+        const { imperial: weightImperial, metric: weightMetric } = extracted.weight || {};
+        const { imperial: heightImperial, metric: heightMetric } = extracted.height[0] || {};
+
+   
         const dbApi = {
           id: item.id,
           name: extracted.name,
@@ -82,8 +92,10 @@ export async function filterAndFetch() {
         // console.log (dbApi)
         const dogs = await Dogs.create({
           name: extracted.name,
-          weight: extracted.weight,
-          height: extracted.height,
+          weightImperial,
+          weightMetric,
+          heightImperial,
+          heightMetric,
           image: item.url,
           life_span: extracted.life_span,
         });
@@ -128,8 +140,17 @@ export async function justApi() {
           // determina si tiene propiedad.  (ej: "Esto: con esto"(true)  carro (false))
           let value = data[key]; // This has the data already.
           if (properties.includes(key)) {
+            if (key === "height") {
+              // Handle multiple 'height' objects
+              if (!result[key]) {
+                result[key] = [];
+              }
+              result[key].push(value);
+            } else {
+              result[key] = value;
+            }
             // now it is checking if name and other are included in properties
-            result[key] = value; // i got the result and it has been put in result{}
+            // result[key] = value; // i got the result and it has been put in result{}
           }
           if (typeof value === "object" && value !== null) {
             // this is important, because that is the way I know if it is an object
@@ -150,7 +171,7 @@ export async function justApi() {
       if (!bDone) {
         throw new Error("No data fetched from the API");
       }
-      let dogPromises =  bDone.map(async (item) => {
+      let dogPromises = bDone.map(async (item) => {
         let extracted = extractProp(item, [
           "name",
           "weight",
@@ -159,11 +180,12 @@ export async function justApi() {
           "temperament",
           "id"
         ]);
-        // console.log(extracted);
+        
+       
         const { imperial: weightImperial, metric: weightMetric } = extracted.weight || {};
-        const { imperial: heightImperial, metric: heightMetric } = extracted.height || {};
+        const { imperial: heightImperial, metric: heightMetric } = extracted.height[0] || {};
 
-      
+        
         const dbApi = {
           id: item.id,
           name: extracted.name,
@@ -175,7 +197,7 @@ export async function justApi() {
           image: item.url,
           temperament: extracted.temperament
         };
-        return {dbApi}
+        return { dbApi }
       })
       const result = (await Promise.all(dogPromises));
       console.log("Every data has been mathched");

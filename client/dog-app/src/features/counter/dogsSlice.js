@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+// import axios from "axios";
 
 
 const Dogs = []
@@ -8,15 +9,23 @@ export const dogSlice = createSlice({
     name: 'dogsIni',
     initialState: Dogs,
     reducers: {
-        getDogs: (state, action) => {          
+        getDogs: (state, action) => {
             return action.payload.filter(dog => dog.name);
         },
         getDogsApi: (state, action) => {
-          return action.payload.filter(dog => dog.name)
+            return action.payload.filter(dog => dog.name)
         },
 
-        addDog: (state, action) => {
+     
+        addDog:  (state, action) => {
             state.push(action.payload)
+            console.log(action.payload)
+            // try {
+            //     const response = await axios.post('http://localhost:3001/dogs/', action.payload);
+            //     console.log('Respuesta del servidor:', response.data);
+            // } catch (error) {
+            //   console.error('Error al enviar el formulario:', error);
+            // }
         },
         deleteDog: (state, action) => {
             const dogFound = state.find(dog => dog.id === action.payload)
@@ -25,17 +34,17 @@ export const dogSlice = createSlice({
             }
         },
         editDog: (state, action) => {
-            const {id, name} = action.payload
+            const { id, name, weightImperial, weightMetric, heightMetric, heightImperial,temperament,life_span} = action.payload
             const idNum = Number(id)
             const findIdDog = state.find((dog) => dog.id === idNum)
-           
             if (findIdDog) {
                 if (name !== undefined) findIdDog.name = name
-                // if (weight !== undefined) findIdDog.weight = weight
-                // if (height !== undefined) findIdDog.height = height
-                // if (temperament !== undefined) findIdDog.temperament = temperament
-                // if (image !== undefined) findIdDog.image = image
-                // if (life_span !== undefined)  findIdDog.life_span = life_span
+                if (weightImperial !== undefined) findIdDog.weightImperial = weightImperial
+                if (weightMetric !== undefined) findIdDog.weightMetric = weightMetric
+                if (heightMetric !== undefined) findIdDog.height = heightMetric
+                if (heightImperial !== undefined) findIdDog.height = heightImperial
+                if (temperament !== undefined) findIdDog.temperament = temperament                
+                if (life_span !== undefined)  findIdDog.life_span = life_span
             }
         }
     }
