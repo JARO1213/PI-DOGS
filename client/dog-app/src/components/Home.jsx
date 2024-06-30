@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { gettingDogs, gettingApiDogs } from '../features/counter/actions.js';
+import { gettingDogs, gettingApiDogs, getTemperament } from '../features/counter/actions.js';
 import { useState, useEffect } from 'react';
 import DogList from '../elements/paginacion.jsx';
 import '../CSS-Components/csmodule.css'
@@ -11,21 +11,23 @@ function HomePage() {
 
     const dispatch = useDispatch()
     const [bdSource, setbdSource] = useState(0);
-    const dogFormState = useSelector(state => state.dogState)
+    const dogFormState = useSelector(state => state.dogState.dogs)
 
 
     useEffect(() => {
-      
+
         if (bdSource === 0) {
             dispatch(gettingDogs());
         } else if (bdSource === 1) {
             dispatch(gettingApiDogs());
-        }
+        } else { }
+
     }, [dispatch, bdSource]);
 
-  
+
 
     const handleSelectChange = (e) => {
+
         const value = parseInt(e.target.value, 10);
         setbdSource(value);
     };
@@ -47,14 +49,17 @@ function HomePage() {
                         <option value={0}>Datos Locales</option>
                         <option value={1}>API</option>
                     </select>
+                    <label>
+                        {dogFormState.name}
+                    </label>
                 </div>
 
                 <Link className='filter-container1' to='/formDogs'>
                     Create Dog form
                 </Link>
             </header>
-            <DogList bdSource={bdSource}/>¨
-          
+            <DogList bdSource={bdSource} />¨
+
         </div>
     )
 }

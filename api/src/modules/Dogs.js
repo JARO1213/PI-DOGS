@@ -14,7 +14,8 @@ export const Dogs = sequelieze.define( "dogs", {
     //temperament: {type:DataTypes.STRING}, // Temperamento.\*
     //temperament: {type:DataTypes.STRING}, // Temperamento.\*
     //temperament: {type:DataTypes.STRING}, // Temperamento.\*
-})
+},{ timestamps: false },
+)
 
 sequelieze.beforeSync(() => {
    sequelieze.query('CREATE SEQUENCE IF NOT EXISTS custom_sequence CACHE 50');
@@ -23,8 +24,8 @@ sequelieze.beforeSync(() => {
    await sequelieze.sync();   // This is to create a sequence that can be used automaticly
     
 
-   Dogs.belongsToMany(Temperaments, {through: 'DogsTemperaments'})
-   Temperaments.belongsToMany(Dogs, {through: 'DogsTemperaments'})
+   Dogs.belongsToMany(Temperaments, {through: 'DogsTemperaments'});
+   Temperaments.belongsToMany(Dogs, {through: 'DogsTemperaments'});
 
 sequelieze.sync
 export default Dogs

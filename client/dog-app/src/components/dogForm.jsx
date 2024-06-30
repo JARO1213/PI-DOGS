@@ -21,13 +21,13 @@ function DogForm() {
     const dispatch = useDispatch()
     const naigate = useNavigate()
     const params = useParams()
-    const dogsState = useSelector(state => state.dogState)
+    const dogsState = useSelector(state => state.dogState.dogs)
 
     useEffect(() => {
         if (params.id) {
             const paramIdAsNumber = Number(params.id);
             const dogToEdit = (dogsState.find((dog) => dog.id === paramIdAsNumber))
-            console.log('aqui:', dogToEdit.name)
+            // console.log('aqui:', dogToEdit.name)
             if (dogToEdit) {
                 setName(dogToEdit)
             }
@@ -36,6 +36,7 @@ function DogForm() {
     }, [params, dogsState])
 
     const handleChange = (e) => {
+        
         setName({
             ...dogCreate,
             [e.target.name]: e.target.value,
@@ -43,18 +44,19 @@ function DogForm() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        let newId = params.id || uuid();
         if (params.id) {
             dispatch(editDog({ ...dogCreate, id: params.id }))
 
         } else  {
+          
             dispatch(addDog({
                 ...dogCreate,
-                id: uuid(),
-            }))
+                id: newId,
+             }))
        
-
         }
-        let enlace = `/detailedDog/${dogCreate.id}`
+        let enlace = `/detailedDog/${newId}`
         naigate(enlace)
     }
     return (

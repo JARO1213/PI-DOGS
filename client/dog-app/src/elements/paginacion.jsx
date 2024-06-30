@@ -1,42 +1,79 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Pagination from '../components/pagination';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { deleteDog } from '../features/counter/dogsSlice';
+import { getTemperament } from '../features/counter/actions';
 
 
-const DogList = ({bdSource}) => {
-  const dogs = useSelector((state) => state.dogState);
+
+const DogList = ({ bdSource }) => {
+  const dogs = useSelector((state) => state.dogState.dogs);
+  const temperament =useSelector (state => state.dogState.temperament)
   const [currentPage, setCurrentPage] = useState(1);
+  const [selecTemp, setSelecTemp] = useState();
   const dispatch = useDispatch()
   const dogsPerPage = 8;
+  
+  
+  useEffect(() => {
+   dispatch(getTemperament())
+ }, [dispatch]);
+  console.log('esto son los temperamentos: ', dogs.map(tem => tem.temperament))
 
   // Calcular los índices de los perros a mostrar en la página actual
   const indexOfLastDog = currentPage * dogsPerPage;
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
   const currentDogs = dogs.slice(indexOfFirstDog, indexOfLastDog);
-
+  // una lista ùnica de temperamentos
+  const uniqueTemperaments = Array.from(new Set(temperament.map(temp => temp.temperament)));
   // Cambiar de página
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const handleDelete = (id) => {
     dispatch(deleteDog(id))
   }
- 
- 
+  const handleSelectChange = (e) => {
+    const value = e.target.value;
+    setSelecTemp(value)
+  };
+   const handleReset =()=>{
+    setCurrentPage(1);
+    setSelecTemp('')
+   }
+
+  const filteredDogs = selecTemp ? currentDogs.filter(dog => dog.temperament.includes(selecTemp)) : currentDogs;
+  // const filteredDogs = currentDogs 
+
   return (
     <div >
+      
+        <div> 
+        <button className='ResetButton' onClick={handleReset}>Limpiar filtro</button>
+          <select className='select' onChange={handleSelectChange} value={selecTemp}>
+            <option value="">Filtrar por Temperamento</option>
+            {uniqueTemperaments.map((temp, index) => (
+              <option key={index} value={temp}>{temp}</option>
+            ))}
+          </select>
+          
 
-      {currentDogs.map((dog, index) => (
+        </div>
+     
+      {filteredDogs.map((dog, index) => (
         <ul className='unorderedList'>
-          <Link  to={`/detailedDog/${dog.id}`}>
+          <Link to={`/detailedDog/${dog.id}`}>
             <ul key={index} className='listItem'>
-              <h4>{dog.name} <img src={dog.image} className='imgStyle' alt={dog.name} /> </h4>          
+              <h4>{dog.name} <img src={dog.image} className='imgStyle' alt={dog.name} /> </h4>
+              <div className='overlay'>
+                <h5 >Temperamentos:</h5>
+                <p>{dog.temperament}</p>
+              </div>
             </ul>
           </Link>
           {bdSource === 0 && (
-          <button  onClick={() => handleDelete(dog.id)} className='buttonClose' >Delete</button>
+            <button onClick={() => handleDelete(dog.id)} className='buttonClose' >Delete</button>
           )}
         </ul>
       ))}

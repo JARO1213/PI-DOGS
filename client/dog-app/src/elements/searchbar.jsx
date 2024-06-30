@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function SearchBar() {
    const [name, setName] = useState("");
    const [error, setError] = useState(false);
-   const dogState = useSelector(state => state.dogState)
+   const dogState = useSelector(state => state.dogState.dogs)
 
    function handleChange(e) {
       setName(e.target.value)

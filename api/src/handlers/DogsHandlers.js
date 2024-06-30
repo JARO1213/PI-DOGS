@@ -26,7 +26,7 @@ export const getId = async (req, res) => {
   try {
     const { id } = req.params;
     const idStr = id.toString();
-    console.log(idStr)
+    // console.log(idStr)
     const apiDog = await filterAndFetch()
     const idApi = apiDog.filter(dog => dog.dbApi.id && dog.dbApi.id === idStr)
     const getOneRaze = await Dogs.findByPk(idStr, {
@@ -90,7 +90,7 @@ export const createDog = async (req, res) => {
     if (!name || !image || !weightImperial || !weightMetric || !heightImperial || !heightMetric || !temperaments || temperaments.length === 0) {
       return res.status(400).json({ message: "Missing required fields" });
     }
-    console.log(req)
+    // console.log(req)
     const newDog = await Dogs.create({
       name,
       weightImperial,
@@ -121,18 +121,13 @@ export const createDog = async (req, res) => {
 export const getAllDogs = async (req, res) => {
   try {
     const dogApi = await filterAndFetch()
-    const getDRaze = await Dogs.findAll({
-      include: {
-        model: Temperaments,
-        attributes: ["id"],
-        through: {
-          attributes: []
-        }
-      },
-    });
+    const getDRaze = await Dogs.findAll({ include: {
+      model: Temperaments,
+      attributes: ["name"], 
+    },});
     if (!getDRaze)
       return res.status(404).json({ message: "It cannot be found!" });
-    let allDogs = [...new Set([...dogApi, ...getDRaze])];
+    let allDogs = [...new Set([...getDRaze, ...dogApi])];
     if (allDogs.length > 19) {
       allDogs = allDogs.slice(0, 50);
     }

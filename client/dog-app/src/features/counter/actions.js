@@ -1,4 +1,4 @@
-import { getDogs, getDogsApi } from "./dogsSlice.js";
+import { getDogs, getDogsApi, getTemp } from "./dogsSlice.js";
 import axios from "axios";
 
  
@@ -6,7 +6,9 @@ export const gettingDogs = () => {
     return async (dispatch) => {
       try {
         const response = await axios.get('http://localhost:3001/allDogs');
+       
         const filteredDogs = response.data.filter(dog => dog.name !== null).map(dog => ({
+        
           id: dog.id,
           name: dog.name,
           weightImperial: dog.weightImperial,
@@ -15,10 +17,10 @@ export const gettingDogs = () => {
           heightMetric: dog.heightMetric,
           image:dog.image,
           life_span:dog.life_span,
-          temperament:  dog.temperament ? dog.temperament : 'Not specified'
-          
+          temperament: dog.temperaments.map(arr => arr.name).join(', '),
+         
         }));
-        
+     
         dispatch(getDogs(filteredDogs));
       } catch (error) {
         console.error('Error fetching dogs:', error);
@@ -39,7 +41,8 @@ export const gettingDogs = () => {
           heightMetric: dog.heightMetric,
           image:dog.image,
           life_span:dog.life_span,
-          Temperament: dog.temperament,
+          
+          temperament: dog.temperament,
         }));
 
         dispatch(getDogsApi(filteredDogs));
@@ -50,4 +53,16 @@ export const gettingDogs = () => {
   };
 
 
- 
+  export const getTemperament= () => {
+    return async (dispatch) => {
+      try {
+        const response = await axios.get('http://localhost:3001/temperaments/');      
+        const filteredDogs = response.data.filter(tem => tem !== null).map(tmp => ({
+         temperament: tmp.name            
+        }));
+         dispatch(getTemp(filteredDogs));
+      } catch (error) {
+        console.error('Error fetching dogs:', error);
+      }
+    };
+  };

@@ -3,20 +3,28 @@ import { Temperaments } from "../modules/Temperaments.js";
 import { filterAndFetch } from "../controllers/dogControllers.js";
 
 export const getTemp = async (req, res) => {
-    try {
-      const getApitem = await filterAndFetch() 
-      const araTemp = (getApitem.filter(dogs => dogs.dbApi.temperament ).map(dog => dog.dbApi.temperament))
-      const getTemperament = await Temperaments.findAll({
+  try {
+    const getApitem = await filterAndFetch()
+    const araTemp = (getApitem.filter(dogs =>
+      dogs.dbApi.temperament).map(dog => dog.dbApi.temperament.split(', ')
+        .map(temp => ({ name: temp.trim() }))));
+    
+    const getTemperament = await Temperaments.findAll({
       attributes: ['name']
-      });
-      if (!getTemperament && araTemp.length === 0){
-        return res.status(404).json({ message: "It cannot be anyone!" });
-      }
-      
-        const combinedResults =  [getTemperament, ...araTemp]
-        return res.status(200).json(combinedResults);
-      
-    } catch (error) {
-      return res.status(500).json({ message: error.message });
+    });
+
+    const dbTemperaments = getTemperament.map(t => ({name:t.name}));
+    console.log(dbTemperaments)
+
+    if (!dbTemperaments && araTemp.length === 0) {
+      return res.status(404).json({ message: "It cannot be anyone!" });
     }
-  };
+    // console.log(dbTemperaments)
+    const combinedResults = [dbTemperaments, ...araTemp.flat()]
+   
+    return res.status(200).json(combinedResults);
+    
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};

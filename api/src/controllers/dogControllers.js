@@ -6,7 +6,7 @@ import { Temperaments } from "../modules/Temperaments.js";
 export async function rout() {
   try {
     let { data } = await axios(
-      `https://api.thedogapi.com/v1/images/search?limit=25&api_key=${process.env.API_KEY}`
+      `https://api.thedogapi.com/v1/images/search?limit=20&api_key=${process.env.API_KEY}`
     );
     if (data !== null) {
       return data;

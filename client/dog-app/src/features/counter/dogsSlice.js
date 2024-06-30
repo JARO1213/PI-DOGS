@@ -1,34 +1,34 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import axios from "axios";
 
 
-const Dogs = []
+let initialState = {
+    dogs: [],
+    temperament : []
+}
+// const Dogs = []
+// const temperament = []
 
 
 export const dogSlice = createSlice({
     name: 'dogsIni',
-    initialState: Dogs,
+    initialState,
     reducers: {
         getDogs: (state, action) => {
-            return action.payload.filter(dog => dog.name);
+            state.dogs = action.payload.filter(dog => dog.name);
         },
         getDogsApi: (state, action) => {
-            return action.payload.filter(dog => dog.name)
+            state.dogs = action.payload.filter(dog => dog.name)
         },
+        getTemp : (state, action) => {
+            state.temperament = action.payload;
+         },
 
-     
         addDog:  (state, action) => {
-            state.push(action.payload)
-            console.log(action.payload)
-            // try {
-            //     const response = await axios.post('http://localhost:3001/dogs/', action.payload);
-            //     console.log('Respuesta del servidor:', response.data);
-            // } catch (error) {
-            //   console.error('Error al enviar el formulario:', error);
-            // }
+            state.dogs.push(action.payload)
+            console.log(action.payload)     
         },
         deleteDog: (state, action) => {
-            const dogFound = state.find(dog => dog.id === action.payload)
+            const dogFound = state.dogs.find(dog => dog.id === action.payload)
             if (dogFound) {
                 state.splice(state.indexOf(dogFound), 1)
             }
@@ -36,7 +36,7 @@ export const dogSlice = createSlice({
         editDog: (state, action) => {
             const { id, name, weightImperial, weightMetric, heightMetric, heightImperial,temperament,life_span} = action.payload
             const idNum = Number(id)
-            const findIdDog = state.find((dog) => dog.id === idNum)
+            const findIdDog = state.dogs.find((dog) => dog.id === idNum)
             if (findIdDog) {
                 if (name !== undefined) findIdDog.name = name
                 if (weightImperial !== undefined) findIdDog.weightImperial = weightImperial
@@ -51,5 +51,5 @@ export const dogSlice = createSlice({
 
 })
 
-export const { addDog, deleteDog, editDog, getDogs, getDogsApi } = dogSlice.actions
+export const { addDog, deleteDog, editDog, getDogs, getDogsApi, getTemp} = dogSlice.actions
 export default dogSlice.reducer

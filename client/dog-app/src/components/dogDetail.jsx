@@ -6,7 +6,7 @@ import { Link, useParams } from "react-router-dom";
 
 function DogDetailed() {
     const params = useParams()
-    const dogsState = useSelector(state => state.dogState)
+    const dogsState = useSelector(state => state.dogState.dogs)
     const [dogDetailed, setDogDetailed] = useState();
     const [dataBase, setDataBase] = useState(0)
 
@@ -15,6 +15,7 @@ function DogDetailed() {
         if (params.id) {
 
             const paramIdAsNumber = Number(params.id);
+
             if (!isNaN(paramIdAsNumber)) {
                 const foundDog = dogsState.find((dog) => dog.id === paramIdAsNumber);
                 setDataBase(0)
@@ -23,12 +24,16 @@ function DogDetailed() {
                 const foundDog = dogsState.find((dog) => dog.id === params.id);
                 setDataBase(1)
                 setDogDetailed(foundDog);
+            } else if (((typeof params.id) === 'string') === true) {
+                const foundDogL = dogsState.find((dog) => dog.id === params.id);
+                setDataBase(0)
+                setDogDetailed(foundDogL);
             } else {
                 console.log('El id ingresado no es válido');
             }
-            console.log(dataBase)
+
         }
-    }, [params, dogsState, dataBase])
+    }, [params, dogsState,])
 
 
 
@@ -43,7 +48,7 @@ function DogDetailed() {
             <div className='filter-container2'>
                 <div>
                     <h2>{dogDetailed.name}</h2>
-                 
+
                     <li> Peso mínimo: {dogDetailed.weightImperial} </li>
                     <li> Peso máximo: {dogDetailed.weightMetric} </li>
                     <li> Altura mínima: {dogDetailed.heightImperial} </li>
@@ -57,7 +62,7 @@ function DogDetailed() {
                         Editar </Link>
                 )}
             </div>
-           
+
         </div>
     )
 }
