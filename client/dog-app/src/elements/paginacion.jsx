@@ -20,17 +20,8 @@ const DogList = ({ bdSource }) => {
   useEffect(() => {
    dispatch(getTemperament())
  }, [dispatch]);
-  console.log('esto son los temperamentos: ', dogs.map(tem => tem.temperament))
-
-  // Calcular los índices de los perros a mostrar en la página actual
-  const indexOfLastDog = currentPage * dogsPerPage;
-  const indexOfFirstDog = indexOfLastDog - dogsPerPage;
-  const currentDogs = dogs.slice(indexOfFirstDog, indexOfLastDog);
-  // una lista ùnica de temperamentos
-  const uniqueTemperaments = Array.from(new Set(temperament.map(temp => temp.temperament)));
-  // Cambiar de página
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
+  
+//  console.log('esto son los temperamentos: ', dogs.map(tem => tem.temperament))
   const handleDelete = (id) => {
     dispatch(deleteDog(id))
   }
@@ -43,13 +34,32 @@ const DogList = ({ bdSource }) => {
     setSelecTemp('')
    }
 
-  const filteredDogs = selecTemp ? currentDogs.filter(dog => dog.temperament.includes(selecTemp)) : currentDogs;
-  // const filteredDogs = currentDogs 
+   const sortedDogs = [...dogs].sort((a, b) => a.name.localeCompare(b.name))
 
+  const filteredDogs = selecTemp ? sortedDogs.filter(dog => dog.temperament.includes(selecTemp)) : sortedDogs;
+  // const filteredDogs = currentDogs 
+  useEffect(() => {
+    if (selecTemp && filteredDogs.length === 0) {
+      alert('No se encontraron perros con el temperamento seleccionado.');
+      setSelecTemp(''); 
+      setCurrentPage(1)
+    }
+  }, [selecTemp, filteredDogs.length]);
+
+  // Calcular los índices de los perros a mostrar en la página actual
+  const indexOfLastDog = currentPage * dogsPerPage;
+  const indexOfFirstDog = indexOfLastDog - dogsPerPage;
+  const currentDogs = filteredDogs.slice(indexOfFirstDog, indexOfLastDog);
+  // una lista ùnica de temperamentos
+  const uniqueTemperaments = Array.from(new Set(temperament.map(temp => temp.temperament))).sort();
+  // Cambiar de página
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+ 
   return (
     <div >
       
-        <div> 
+        <div className='down'>  
         <button className='ResetButton' onClick={handleReset}>Limpiar filtro</button>
           <select className='select' onChange={handleSelectChange} value={selecTemp}>
             <option value="">Filtrar por Temperamento</option>
@@ -61,7 +71,7 @@ const DogList = ({ bdSource }) => {
 
         </div>
      
-      {filteredDogs.map((dog, index) => (
+      {currentDogs.map((dog, index) => (
         <ul className='unorderedList'>
           <Link to={`/detailedDog/${dog.id}`}>
             <ul key={index} className='listItem'>

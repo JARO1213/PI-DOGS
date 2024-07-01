@@ -30,19 +30,31 @@ export const dogSlice = createSlice({
         deleteDog: (state, action) => {
             const dogFound = state.dogs.find(dog => dog.id === action.payload)
             if (dogFound) {
-                state.splice(state.indexOf(dogFound), 1)
+                state.dogs.splice(state.dogs.indexOf(dogFound), 1)
             }
         },
         editDog: (state, action) => {
-            const { id, name, weightImperial, weightMetric, heightMetric, heightImperial,temperament,life_span} = action.payload
+            const { id, name,  weightMetricMin, weightMetricMax, weightImperialMin, weightImperialMax, heightMetricMin, heightMetricMax, heightImperialMin, heightImperialMax, temperament,life_span} = action.payload
             const idNum = Number(id)
             const findIdDog = state.dogs.find((dog) => dog.id === idNum)
             if (findIdDog) {
                 if (name !== undefined) findIdDog.name = name
-                if (weightImperial !== undefined) findIdDog.weightImperial = weightImperial
-                if (weightMetric !== undefined) findIdDog.weightMetric = weightMetric
-                if (heightMetric !== undefined) findIdDog.height = heightMetric
-                if (heightImperial !== undefined) findIdDog.height = heightImperial
+                
+                if (weightMetricMin !== undefined && weightMetricMax !== undefined) {
+                    findIdDog.weightMetric = `${weightMetricMin}-${weightMetricMax}`;
+                }
+
+                if (weightImperialMin !== undefined && weightImperialMax !== undefined) {
+                    findIdDog.weightImperial = `${weightImperialMin}-${weightImperialMax}`;
+                }
+
+                if (heightMetricMin !== undefined && heightMetricMax !== undefined) {
+                    findIdDog.heightMetric = `${heightMetricMin}-${heightMetricMax}`;
+                }
+
+                if (heightImperialMin !== undefined && heightImperialMax !== undefined) {
+                    findIdDog.heightImperial = `${heightImperialMin}-${heightImperialMax}`;
+                }
                 if (temperament !== undefined) findIdDog.temperament = temperament                
                 if (life_span !== undefined)  findIdDog.life_span = life_span
             }

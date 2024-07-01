@@ -8,9 +8,17 @@ import Nav from './elements/nav.jsx';
 import DogDetailed from './components/dogDetail.jsx';
 import LandingPage from './components/landing.jsx';
 import NotFound from './elements/noFound.jsx';
+import { useState } from 'react';
 
 
 function App() {
+  const [source, setSource] =useState (0)
+   
+
+    const handleSelectChange = (e) => {
+        
+        setSource(e);
+    };
 
   return (
     <div className="App">
@@ -24,9 +32,9 @@ function App() {
                 path='/*' 
                 element={
                   <>
-                    <Nav />
+                    <Nav source ={source} onSelectChange= {handleSelectChange}/>
                     <Routes>
-                      <Route path='/home' element={<HomePage />} />
+                      <Route path='/home' element={<HomePage source={source}/>} />
                       <Route path='/formDogs' element={<DogForm />} />
                       <Route path='/editDog/:id' element={<DogForm />} />
                       <Route path='/detailedDog/:id' element={<DogDetailed />} />

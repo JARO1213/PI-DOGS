@@ -1,16 +1,18 @@
 import  React from "react";
 import '../CSS-Components/csmodule.css'
 import SearchBar from "./searchbar";
-import { Link } from "react-router-dom";
 
-function Nav ({onSearch}) {
+import { Link } from "react-router-dom";
+import Select from "./select";
+
+function Nav ({onSearch, source, onSelectChange}) {
 
    return (     
     <div className= "navBar" > 
     <ul>
-    <li><Link to={'/home'} >Home</Link></li>
-    <li><Link to='/formDogs'> Create-Dog  </Link></li>
-    
+    <li className="filter-container1"><Link to={'/home'} >Home</Link></li>
+    <li className="filter-container1"><Link to='/formDogs'> Create-Dog  </Link></li>
+  
        {/* <Link to ="/About">About</Link>
        <br></br>         
       
@@ -18,6 +20,8 @@ function Nav ({onSearch}) {
        <Link to ="/Favorite">Favorite</Link> */}
     </ul>
     <SearchBar onSearch={onSearch}/>
+    <Select source={source} onSelectChange={onSelectChange} />
+   
        
                    
      </div> 

@@ -363,3 +363,85 @@
 2024-06-30 08:35:19.645 -05 [8052] LOG:  checkpoint complete: wrote 58 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.037 s, sync=0.033 s, total=6.080 s; sync files=12, longest=0.010 s, average=0.003 s; distance=205 kB, estimate=426 kB; lsn=0/ADC7AA8, redo lsn=0/ADC7A38
 2024-06-30 08:40:13.645 -05 [8052] LOG:  empezando checkpoint: time
 2024-06-30 08:40:14.973 -05 [8052] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.285 s, sync=0.023 s, total=1.329 s; sync files=10, longest=0.009 s, average=0.003 s; distance=55 kB, estimate=389 kB; lsn=0/ADD57D0, redo lsn=0/ADD5798
+2024-06-30 08:45:13.961 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 08:45:22.803 -05 [8052] LOG:  checkpoint complete: wrote 84 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=8.808 s, sync=0.023 s, total=8.842 s; sync files=10, longest=0.007 s, average=0.003 s; distance=198 kB, estimate=370 kB; lsn=0/AE07288, redo lsn=0/AE07250
+2024-06-30 08:50:13.795 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 08:50:25.432 -05 [8052] LOG:  checkpoint complete: wrote 112 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=11.607 s, sync=0.018 s, total=11.638 s; sync files=16, longest=0.005 s, average=0.002 s; distance=462 kB, estimate=462 kB; lsn=0/AE7AC98, redo lsn=0/AE7AC60
+2024-06-30 08:54:15.743 -05 [9224] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 08:54:15.743 -05 [1068] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 08:54:21.420 -05 [1596] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 08:54:21.420 -05 [15100] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 08:55:13.433 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 08:55:27.702 -05 [8052] LOG:  checkpoint complete: wrote 136 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=14.196 s, sync=0.051 s, total=14.270 s; sync files=66, longest=0.007 s, average=0.001 s; distance=836 kB, estimate=836 kB; lsn=0/AF80050, redo lsn=0/AF4BDE8
+2024-06-30 09:00:13.708 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:00:23.252 -05 [8052] LOG:  checkpoint complete: wrote 92 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=9.507 s, sync=0.018 s, total=9.544 s; sync files=24, longest=0.004 s, average=0.001 s; distance=464 kB, estimate=799 kB; lsn=0/AFBFF58, redo lsn=0/AFBFF20
+2024-06-30 09:00:53.885 -05 [15812] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 09:00:53.886 -05 [7596] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 09:05:13.251 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:05:26.255 -05 [8052] LOG:  checkpoint complete: wrote 121 buffers (0.7%); 0 WAL file(s) added, 0 removed, 1 recycled; write=12.397 s, sync=0.534 s, total=13.005 s; sync files=32, longest=0.042 s, average=0.017 s; distance=906 kB, estimate=906 kB; lsn=0/B0A2778, redo lsn=0/B0A2740
+2024-06-30 09:15:13.280 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:15:31.212 -05 [8052] LOG:  checkpoint complete: wrote 168 buffers (1.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=17.866 s, sync=0.046 s, total=17.932 s; sync files=30, longest=0.009 s, average=0.002 s; distance=1800 kB, estimate=1800 kB; lsn=0/B264AA8, redo lsn=0/B264A70
+2024-06-30 09:20:13.216 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:20:26.306 -05 [8052] LOG:  checkpoint complete: wrote 128 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=13.040 s, sync=0.031 s, total=13.091 s; sync files=28, longest=0.007 s, average=0.002 s; distance=958 kB, estimate=1716 kB; lsn=0/B354490, redo lsn=0/B354458
+2024-06-30 09:25:13.308 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:25:24.621 -05 [8052] LOG:  checkpoint complete: wrote 109 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=11.259 s, sync=0.041 s, total=11.313 s; sync files=28, longest=0.007 s, average=0.002 s; distance=962 kB, estimate=1641 kB; lsn=0/B444FC8, redo lsn=0/B444F90
+2024-06-30 09:30:09.551 -05 [2748] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 09:30:09.551 -05 [15704] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 09:30:09.551 -05 [11364] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 09:30:09.551 -05 [14260] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 09:30:09.551 -05 [2692] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-06-30 09:30:13.626 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:30:18.421 -05 [8052] LOG:  checkpoint complete: wrote 50 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.767 s, sync=0.021 s, total=4.796 s; sync files=14, longest=0.007 s, average=0.002 s; distance=342 kB, estimate=1511 kB; lsn=0/B4B7BE8, redo lsn=0/B49A940
+2024-06-30 09:35:13.428 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:35:32.437 -05 [8052] LOG:  checkpoint complete: wrote 183 buffers (1.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=18.974 s, sync=0.025 s, total=19.010 s; sync files=29, longest=0.007 s, average=0.001 s; distance=1514 kB, estimate=1514 kB; lsn=0/B615568, redo lsn=0/B615530
+2024-06-30 09:40:13.448 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:40:18.188 -05 [8052] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.707 s, sync=0.013 s, total=4.740 s; sync files=13, longest=0.003 s, average=0.001 s; distance=408 kB, estimate=1404 kB; lsn=0/B67B628, redo lsn=0/B67B5F0
+2024-06-30 09:50:13.213 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 09:50:28.129 -05 [8052] LOG:  checkpoint complete: wrote 130 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=13.403 s, sync=0.309 s, total=14.917 s; sync files=18, longest=0.034 s, average=0.018 s; distance=1213 kB, estimate=1385 kB; lsn=0/B7AAC98, redo lsn=0/B7AAC60
+2024-06-30 10:10:13.142 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 10:10:25.583 -05 [8052] LOG:  checkpoint complete: wrote 121 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=12.379 s, sync=0.041 s, total=12.442 s; sync files=15, longest=0.011 s, average=0.003 s; distance=676 kB, estimate=1314 kB; lsn=0/B853F88, redo lsn=0/B853F50
+2024-06-30 10:40:13.635 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 10:40:21.444 -05 [8052] LOG:  checkpoint complete: wrote 76 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.770 s, sync=0.019 s, total=7.810 s; sync files=18, longest=0.007 s, average=0.002 s; distance=544 kB, estimate=1237 kB; lsn=0/B8DC278, redo lsn=0/B8DC240
+2024-06-30 10:45:13.437 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 10:45:24.834 -05 [8052] LOG:  checkpoint complete: wrote 109 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=11.349 s, sync=0.025 s, total=11.397 s; sync files=14, longest=0.009 s, average=0.002 s; distance=533 kB, estimate=1167 kB; lsn=0/B961788, redo lsn=0/B961750
+2024-06-30 10:50:13.838 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 10:50:25.473 -05 [8052] LOG:  checkpoint complete: wrote 111 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=11.601 s, sync=0.017 s, total=11.635 s; sync files=16, longest=0.007 s, average=0.001 s; distance=1082 kB, estimate=1158 kB; lsn=0/BA702E8, redo lsn=0/BA702B0
+2024-06-30 11:00:13.487 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 11:00:28.746 -05 [8052] LOG:  checkpoint complete: wrote 148 buffers (0.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=15.228 s, sync=0.020 s, total=15.260 s; sync files=17, longest=0.008 s, average=0.002 s; distance=809 kB, estimate=1123 kB; lsn=0/BB85620, redo lsn=0/BB3A8D0
+2024-06-30 11:10:13.759 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 11:10:18.176 -05 [8052] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.386 s, sync=0.012 s, total=4.418 s; sync files=12, longest=0.003 s, average=0.001 s; distance=694 kB, estimate=1080 kB; lsn=0/BBE8160, redo lsn=0/BBE8128
+2024-06-30 11:15:13.165 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 11:15:19.956 -05 [8052] LOG:  checkpoint complete: wrote 68 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.760 s, sync=0.019 s, total=6.792 s; sync files=16, longest=0.007 s, average=0.002 s; distance=518 kB, estimate=1024 kB; lsn=0/BC69B80, redo lsn=0/BC69B48
+2024-06-30 11:20:13.967 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 11:20:27.298 -05 [8052] LOG:  checkpoint complete: wrote 125 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=13.305 s, sync=0.017 s, total=13.331 s; sync files=15, longest=0.006 s, average=0.002 s; distance=920 kB, estimate=1014 kB; lsn=0/BD4FF08, redo lsn=0/BD4FED0
+2024-06-30 11:35:13.310 -05 [8052] LOG:  empezando checkpoint: time
+2024-06-30 11:35:27.094 -05 [8052] LOG:  checkpoint complete: wrote 127 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=13.734 s, sync=0.031 s, total=13.785 s; sync files=17, longest=0.009 s, average=0.002 s; distance=585 kB, estimate=971 kB; lsn=0/BDE24D8, redo lsn=0/BDE24A0
+2024-07-01 06:54:03.135 -05 [8052] LOG:  empezando checkpoint: time
+2024-07-01 06:54:07.138 -05 [8052] LOG:  checkpoint complete: wrote 41 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.976 s, sync=0.017 s, total=4.004 s; sync files=14, longest=0.007 s, average=0.002 s; distance=197 kB, estimate=893 kB; lsn=0/BE38518, redo lsn=0/BE13C20
+2024-07-01 06:59:03.148 -05 [8052] LOG:  empezando checkpoint: time
+2024-07-01 06:59:11.223 -05 [8052] LOG:  checkpoint complete: wrote 77 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=8.040 s, sync=0.014 s, total=8.076 s; sync files=12, longest=0.006 s, average=0.002 s; distance=769 kB, estimate=881 kB; lsn=0/BED43F8, redo lsn=0/BED43C0
+2024-07-01 07:01:02.069 -05 [15476] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-07-01 07:01:02.069 -05 [22308] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-07-01 07:01:02.069 -05 [16704] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-07-01 07:01:02.069 -05 [10824] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-07-01 07:01:02.069 -05 [13864] LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+2024-07-01 07:04:03.238 -05 [8052] LOG:  empezando checkpoint: time
+2024-07-01 07:04:07.599 -05 [8052] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.315 s, sync=0.024 s, total=4.361 s; sync files=11, longest=0.009 s, average=0.003 s; distance=273 kB, estimate=820 kB; lsn=0/BF18BC8, redo lsn=0/BF18B90
+2024-07-01 07:09:03.591 -05 [8052] LOG:  empezando checkpoint: time
+2024-07-01 07:09:06.448 -05 [8052] LOG:  checkpoint complete: wrote 29 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.826 s, sync=0.018 s, total=2.857 s; sync files=10, longest=0.008 s, average=0.002 s; distance=98 kB, estimate=748 kB; lsn=0/BF31448, redo lsn=0/BF31410

@@ -14,12 +14,12 @@ export const getTemp = async (req, res) => {
     });
 
     const dbTemperaments = getTemperament.map(t => ({name:t.name}));
-    console.log(dbTemperaments)
+    
 
     if (!dbTemperaments && araTemp.length === 0) {
       return res.status(404).json({ message: "It cannot be anyone!" });
     }
-    // console.log(dbTemperaments)
+    
     const combinedResults = [dbTemperaments, ...araTemp.flat()]
    
     return res.status(200).json(combinedResults);

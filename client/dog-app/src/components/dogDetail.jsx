@@ -49,11 +49,11 @@ function DogDetailed() {
                 <div>
                     <h2>{dogDetailed.name}</h2>
 
-                    <li> Peso mínimo: {dogDetailed.weightImperial} </li>
-                    <li> Peso máximo: {dogDetailed.weightMetric} </li>
-                    <li> Altura mínima: {dogDetailed.heightImperial} </li>
-                    <li> Altura mínima: {dogDetailed.heightMetric} </li>
-                    <li> Tiempo de vida: {dogDetailed.life_span} </li>
+                    <li> Peso Máximo: {dogDetailed.weightImperial} kg </li>
+                    <li> Peso Mínimo: {dogDetailed.weightMetric} kg </li>
+                    <li> Altura Máxima: {dogDetailed.heightImperial} cm </li>
+                    <li> Altura Mínima: {dogDetailed.heightMetric} cm </li>
+                    <li> Tiempo de vida: {dogDetailed.life_span}  </li>
                     <li> Temperament: {dogDetailed.temperament}</li>
                 </div>
                 <img src={dogDetailed.image} className='imgStyleD' alt={dogDetailed.image} />

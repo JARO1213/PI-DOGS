@@ -112,7 +112,7 @@ export async function filterAndFetch() {
           await dogs.addTemperaments(temperaments);
         }
 
-        // console.log('Esto es dbApi:', dbApi)
+        
         return { dogs, dbApi }
       })
       const result = (await Promise.all(dogPromises));

@@ -1,39 +1,31 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { gettingDogs, gettingApiDogs, getTemperament } from '../features/counter/actions.js';
-import { useState, useEffect } from 'react';
+import { gettingDogs, gettingApiDogs, } from '../features/counter/actions.js';
+import {  useEffect } from 'react';
 import DogList from '../elements/paginacion.jsx';
 import '../CSS-Components/csmodule.css'
 
 
-function HomePage() {
+
+function HomePage({source}) {
 
 
     const dispatch = useDispatch()
-    const [bdSource, setbdSource] = useState(0);
+   
     const dogFormState = useSelector(state => state.dogState.dogs)
-
-
+   
     useEffect(() => {
-
-        if (bdSource === 0) {
+        
+        if (source === 0) {
             dispatch(gettingDogs());
-        } else if (bdSource === 1) {
+        } else if (source === 1) {
             dispatch(gettingApiDogs());
-        } else { }
+        } 
 
-    }, [dispatch, bdSource]);
-
-
-
-    const handleSelectChange = (e) => {
-
-        const value = parseInt(e.target.value, 10);
-        setbdSource(value);
-    };
+    }, [dispatch, source]);
 
 
 
+        
     if (!dogFormState || dogFormState.length === 0) {
         return <p>Loading dogs...</p>;
     }
@@ -41,24 +33,23 @@ function HomePage() {
     return (
         <div >
             <header>
-                <h1>Dogs App </h1>
-                <h3>Tenemos: {dogFormState.length} perros para ti</h3>
-                <div className='filter-containerF'>
+                <h1>
+                Tenemos: {dogFormState.length} perros para ti
+                  <span>
+                  Dogs App 
+                  </span>  
+                  </h1>
+                  </header>
+                {/* <div className='filter-containerF'>
                     <p className='filter-label'>Filtrar por:</p>
-                    <select onChange={handleSelectChange} value={bdSource}>
+                    <select onChange={handleSelectChange} value={source}>
                         <option value={0}>Datos Locales</option>
                         <option value={1}>API</option>
                     </select>
-                    <label>
-                        {dogFormState.name}
-                    </label>
-                </div>
+                </div> */}
 
-                <Link className='filter-container1' to='/formDogs'>
-                    Create Dog form
-                </Link>
-            </header>
-            <DogList bdSource={bdSource} />¨
+                           
+            <DogList bdSource={source} />¨
 
         </div>
     )
